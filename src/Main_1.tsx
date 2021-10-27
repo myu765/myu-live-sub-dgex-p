@@ -5,9 +5,19 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Alert from '@mui/material/Alert';
-import SaveAltIcon from '@mui/icons-material/SaveAlt';
-import InputSharpIcon from '@mui/icons-material/InputSharp';
+import FileDownloadSharpIcon from '@mui/icons-material/FileDownloadSharp';
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
+function ClickHelp() {
+  console.log("click help button")
+}
+function ClickInput() {
+  console.log("click input button")
+}
+function ClickOutput() {
+  console.log("click output button")
+}
 function Main_1() {
   return (
     <Box>
@@ -17,11 +27,14 @@ function Main_1() {
             <Typography variant="body1" component="div" sx={{ flexGrow: 1 }}>
               デモンゲイズ　エクストラ
             </Typography>
-            <IconButton size="small" color="inherit" onClick={ () => {;} }>
-              <InputSharpIcon />
+            <IconButton size="small" color="inherit" onClick={ () => { ClickHelp() } }>
+              <HelpOutlineIcon />
             </IconButton>
-            <IconButton size="small" color="inherit" onClick={ () => {;} }>
-              <SaveAltIcon />
+            <IconButton size="small" color="inherit" onClick={ () => { ClickInput() } }>
+              <OpenInBrowserIcon />
+            </IconButton>
+            <IconButton size="small" color="inherit" onClick={ () => { ClickOutput() } }>
+              <FileDownloadSharpIcon />
             </IconButton>
           </Toolbar>
         </AppBar>
