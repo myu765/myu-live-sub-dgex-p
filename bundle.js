@@ -2082,10 +2082,10 @@ function generateUtilityClasses(componentName, slots) {
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/Archive.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Archive.js ***!
-  \*****************************************************/
+/***/ "./node_modules/@mui/icons-material/AnnouncementSharp.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@mui/icons-material/AnnouncementSharp.js ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2103,17 +2103,17 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "m20.54 5.23-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5 6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"
-}), 'Archive');
+  d: "M22 2H2v20l4-4h16V2zm-9 9h-2V5h2v6zm0 4h-2v-2h2v2z"
+}), 'AnnouncementSharp');
 
 exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/Favorite.js":
-/*!******************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Favorite.js ***!
-  \******************************************************/
+/***/ "./node_modules/@mui/icons-material/DriveFileRenameOutlineSharp.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@mui/icons-material/DriveFileRenameOutlineSharp.js ***!
+  \*************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2131,17 +2131,17 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-}), 'Favorite');
+  d: "m15 16-4 4h10v-4zm-2.94-8.81L3 16.25V20h3.75l9.06-9.06zm1.072-1.0673 2.5385-2.5386 3.7477 3.7477-2.5385 2.5385z"
+}), 'DriveFileRenameOutlineSharp');
 
 exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/InputSharp.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/InputSharp.js ***!
-  \********************************************************/
+/***/ "./node_modules/@mui/icons-material/FileDownloadSharp.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@mui/icons-material/FileDownloadSharp.js ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2159,8 +2159,64 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3zM23 3.01H1V9h2V4.99h18v14.03H3V15H1v5.99h22V3.01zM11 16l4-4-4-4v3H1v2h10v3z"
-}), 'InputSharp');
+  d: "M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+}), 'FileDownloadSharp');
+
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/HelpOutline.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@mui/icons-material/HelpOutline.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"
+}), 'HelpOutline');
+
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/OpenInBrowser.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@mui/icons-material/OpenInBrowser.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6-4 4h3v6h2v-6h3l-4-4z"
+}), 'OpenInBrowser');
 
 exports["default"] = _default;
 
@@ -2194,10 +2250,10 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/SaveAlt.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@mui/icons-material/SaveAlt.js ***!
-  \*****************************************************/
+/***/ "./node_modules/@mui/icons-material/Star.js":
+/*!**************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Star.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2215,8 +2271,8 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67 2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"
-}), 'SaveAlt');
+  d: "M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+}), 'Star');
 
 exports["default"] = _default;
 
@@ -4609,6 +4665,441 @@ function getTouchRippleUtilityClass(slot) {
 }
 const touchRippleClasses = (0,_mui_core__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiTouchRipple', ['root', 'ripple', 'rippleVisible', 'ripplePulsate', 'child', 'childLeaving', 'childPulsate']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (touchRippleClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Button/Button.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@mui/material/Button/Button.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/composeClasses/composeClasses.js");
+/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/system */ "./node_modules/@mui/system/esm/colorManipulator.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@mui/material/ButtonBase/ButtonBase.js");
+/* harmony import */ var _utils_capitalize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/capitalize */ "./node_modules/@mui/material/utils/capitalize.js");
+/* harmony import */ var _buttonClasses__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./buttonClasses */ "./node_modules/@mui/material/Button/buttonClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+const _excluded = ["children", "color", "component", "disabled", "disableElevation", "disableFocusRipple", "endIcon", "focusVisibleClassName", "fullWidth", "size", "startIcon", "type", "variant"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+const useUtilityClasses = ownerState => {
+  const {
+    color,
+    disableElevation,
+    fullWidth,
+    size,
+    variant,
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root', variant, `${variant}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color)}`, `size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(size)}`, `${variant}Size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(size)}`, color === 'inherit' && 'colorInherit', disableElevation && 'disableElevation', fullWidth && 'fullWidth'],
+    label: ['label'],
+    startIcon: ['startIcon', `iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(size)}`],
+    endIcon: ['endIcon', `iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(size)}`]
+  };
+  const composedClasses = (0,_mui_core__WEBPACK_IMPORTED_MODULE_7__["default"])(slots, _buttonClasses__WEBPACK_IMPORTED_MODULE_8__.getButtonUtilityClass, classes);
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, classes, composedClasses);
+};
+
+const commonIconStyles = ownerState => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.size === 'small' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 18
+  }
+}, ownerState.size === 'medium' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 20
+  }
+}, ownerState.size === 'large' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 22
+  }
+});
+
+const ButtonRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])(_ButtonBase__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  shouldForwardProp: prop => (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__.rootShouldForwardProp)(prop) || prop === 'classes',
+  name: 'MuiButton',
+  slot: 'Root',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.root, styles[ownerState.variant], styles[`${ownerState.variant}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(ownerState.color)}`], styles[`size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(ownerState.size)}`], styles[`${ownerState.variant}Size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(ownerState.size)}`], ownerState.color === 'inherit' && styles.colorInherit, ownerState.disableElevation && styles.disableElevation, ownerState.fullWidth && styles.fullWidth];
+  }
+})(({
+  theme,
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, theme.typography.button, {
+  minWidth: 64,
+  padding: '6px 16px',
+  borderRadius: theme.shape.borderRadius,
+  transition: theme.transitions.create(['background-color', 'box-shadow', 'border-color', 'color'], {
+    duration: theme.transitions.duration.short
+  }),
+  '&:hover': (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    textDecoration: 'none',
+    backgroundColor: (0,_mui_system__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette.text.primary, theme.palette.action.hoverOpacity),
+    // Reset on touch devices, it doesn't add specificity
+    '@media (hover: none)': {
+      backgroundColor: 'transparent'
+    }
+  }, ownerState.variant === 'text' && ownerState.color !== 'inherit' && {
+    backgroundColor: (0,_mui_system__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette[ownerState.color].main, theme.palette.action.hoverOpacity),
+    // Reset on touch devices, it doesn't add specificity
+    '@media (hover: none)': {
+      backgroundColor: 'transparent'
+    }
+  }, ownerState.variant === 'outlined' && ownerState.color !== 'inherit' && {
+    border: `1px solid ${theme.palette[ownerState.color].main}`,
+    backgroundColor: (0,_mui_system__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette[ownerState.color].main, theme.palette.action.hoverOpacity),
+    // Reset on touch devices, it doesn't add specificity
+    '@media (hover: none)': {
+      backgroundColor: 'transparent'
+    }
+  }, ownerState.variant === 'contained' && {
+    backgroundColor: theme.palette.grey.A100,
+    boxShadow: theme.shadows[4],
+    // Reset on touch devices, it doesn't add specificity
+    '@media (hover: none)': {
+      boxShadow: theme.shadows[2],
+      backgroundColor: theme.palette.grey[300]
+    }
+  }, ownerState.variant === 'contained' && ownerState.color !== 'inherit' && {
+    backgroundColor: theme.palette[ownerState.color].dark,
+    // Reset on touch devices, it doesn't add specificity
+    '@media (hover: none)': {
+      backgroundColor: theme.palette[ownerState.color].main
+    }
+  }),
+  '&:active': (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.variant === 'contained' && {
+    boxShadow: theme.shadows[8]
+  }),
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_8__["default"].focusVisible}`]: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.variant === 'contained' && {
+    boxShadow: theme.shadows[6]
+  }),
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_8__["default"].disabled}`]: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    color: theme.palette.action.disabled
+  }, ownerState.variant === 'outlined' && {
+    border: `1px solid ${theme.palette.action.disabledBackground}`
+  }, ownerState.variant === 'outlined' && ownerState.color === 'secondary' && {
+    border: `1px solid ${theme.palette.action.disabled}`
+  }, ownerState.variant === 'contained' && {
+    color: theme.palette.action.disabled,
+    boxShadow: theme.shadows[0],
+    backgroundColor: theme.palette.action.disabledBackground
+  })
+}, ownerState.variant === 'text' && {
+  padding: '6px 8px'
+}, ownerState.variant === 'text' && ownerState.color !== 'inherit' && {
+  color: theme.palette[ownerState.color].main
+}, ownerState.variant === 'outlined' && {
+  padding: '5px 15px',
+  border: `1px solid ${theme.palette.mode === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'}`
+}, ownerState.variant === 'outlined' && ownerState.color !== 'inherit' && {
+  color: theme.palette[ownerState.color].main,
+  border: `1px solid ${(0,_mui_system__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette[ownerState.color].main, 0.5)}`
+}, ownerState.variant === 'contained' && {
+  color: theme.palette.getContrastText(theme.palette.grey[300]),
+  backgroundColor: theme.palette.grey[300],
+  boxShadow: theme.shadows[2]
+}, ownerState.variant === 'contained' && ownerState.color !== 'inherit' && {
+  color: theme.palette[ownerState.color].contrastText,
+  backgroundColor: theme.palette[ownerState.color].main
+}, ownerState.color === 'inherit' && {
+  color: 'inherit',
+  borderColor: 'currentColor'
+}, ownerState.size === 'small' && ownerState.variant === 'text' && {
+  padding: '4px 5px',
+  fontSize: theme.typography.pxToRem(13)
+}, ownerState.size === 'large' && ownerState.variant === 'text' && {
+  padding: '8px 11px',
+  fontSize: theme.typography.pxToRem(15)
+}, ownerState.size === 'small' && ownerState.variant === 'outlined' && {
+  padding: '3px 9px',
+  fontSize: theme.typography.pxToRem(13)
+}, ownerState.size === 'large' && ownerState.variant === 'outlined' && {
+  padding: '7px 21px',
+  fontSize: theme.typography.pxToRem(15)
+}, ownerState.size === 'small' && ownerState.variant === 'contained' && {
+  padding: '4px 10px',
+  fontSize: theme.typography.pxToRem(13)
+}, ownerState.size === 'large' && ownerState.variant === 'contained' && {
+  padding: '8px 22px',
+  fontSize: theme.typography.pxToRem(15)
+}, ownerState.fullWidth && {
+  width: '100%'
+}), ({
+  ownerState
+}) => ownerState.disableElevation && {
+  boxShadow: 'none',
+  '&:hover': {
+    boxShadow: 'none'
+  },
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_8__["default"].focusVisible}`]: {
+    boxShadow: 'none'
+  },
+  '&:active': {
+    boxShadow: 'none'
+  },
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_8__["default"].disabled}`]: {
+    boxShadow: 'none'
+  }
+});
+const ButtonStartIcon = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])('span', {
+  name: 'MuiButton',
+  slot: 'StartIcon',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.startIcon, styles[`iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(ownerState.size)}`]];
+  }
+})(({
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  display: 'inherit',
+  marginRight: 8,
+  marginLeft: -4
+}, ownerState.size === 'small' && {
+  marginLeft: -2
+}, commonIconStyles(ownerState)));
+const ButtonEndIcon = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])('span', {
+  name: 'MuiButton',
+  slot: 'EndIcon',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.endIcon, styles[`iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(ownerState.size)}`]];
+  }
+})(({
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  display: 'inherit',
+  marginRight: -4,
+  marginLeft: 8
+}, ownerState.size === 'small' && {
+  marginRight: -2
+}, commonIconStyles(ownerState)));
+const Button = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Button(inProps, ref) {
+  const props = (0,_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_12__["default"])({
+    props: inProps,
+    name: 'MuiButton'
+  });
+
+  const {
+    children,
+    color = 'primary',
+    component = 'button',
+    disabled = false,
+    disableElevation = false,
+    disableFocusRipple = false,
+    endIcon: endIconProp,
+    focusVisibleClassName,
+    fullWidth = false,
+    size = 'medium',
+    startIcon: startIconProp,
+    type,
+    variant = 'text'
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
+
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
+    color,
+    component,
+    disabled,
+    disableElevation,
+    disableFocusRipple,
+    fullWidth,
+    size,
+    type,
+    variant
+  });
+
+  const classes = useUtilityClasses(ownerState);
+
+  const startIcon = startIconProp && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ButtonStartIcon, {
+    className: classes.startIcon,
+    ownerState: ownerState,
+    children: startIconProp
+  });
+
+  const endIcon = endIconProp && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ButtonEndIcon, {
+    className: classes.endIcon,
+    ownerState: ownerState,
+    children: endIconProp
+  });
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(ButtonRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    ownerState: ownerState,
+    component: component,
+    disabled: disabled,
+    focusRipple: !disableFocusRipple,
+    focusVisibleClassName: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.focusVisible, focusVisibleClassName),
+    ref: ref,
+    type: type
+  }, other, {
+    classes: classes,
+    children: [startIcon, children, endIcon]
+  }));
+});
+ true ? Button.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   * @default 'primary'
+   */
+  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['inherit', 'primary', 'secondary', 'success', 'error', 'info', 'warning']), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)]),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().elementType),
+
+  /**
+   * If `true`, the component is disabled.
+   * @default false
+   */
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * If `true`, no elevation is used.
+   * @default false
+   */
+  disableElevation: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * If `true`, the  keyboard focus ripple is disabled.
+   * @default false
+   */
+  disableFocusRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * If `true`, the ripple effect is disabled.
+   *
+   * ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
+   * to highlight the element by applying separate styles with the `.Mui-focusVisible` class.
+   * @default false
+   */
+  disableRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * Element placed after the children.
+   */
+  endIcon: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * @ignore
+   */
+  focusVisibleClassName: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+
+  /**
+   * If `true`, the button will take up the full width of its container.
+   * @default false
+   */
+  fullWidth: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * The URL to link to when the button is clicked.
+   * If defined, an `a` element will be used as the root node.
+   */
+  href: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+
+  /**
+   * The size of the component.
+   * `small` is equivalent to the dense button styling.
+   * @default 'medium'
+   */
+  size: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['small', 'medium', 'large']), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)]),
+
+  /**
+   * Element placed before the children.
+   */
+  startIcon: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+
+  /**
+   * @ignore
+   */
+  type: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['button', 'reset', 'submit']), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)]),
+
+  /**
+   * The variant to use.
+   * @default 'text'
+   */
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['contained', 'outlined', 'text']), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)])
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Button/buttonClasses.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@mui/material/Button/buttonClasses.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getButtonUtilityClass": () => (/* binding */ getButtonUtilityClass),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClass/generateUtilityClass.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClasses/generateUtilityClasses.js");
+
+function getButtonUtilityClass(slot) {
+  return (0,_mui_core__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiButton', slot);
+}
+const buttonClasses = (0,_mui_core__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiButton', ['root', 'text', 'textInherit', 'textPrimary', 'textSecondary', 'outlined', 'outlinedInherit', 'outlinedPrimary', 'outlinedSecondary', 'contained', 'containedInherit', 'containedPrimary', 'containedSecondary', 'disableElevation', 'focusVisible', 'disabled', 'colorInherit', 'textSizeSmall', 'textSizeMedium', 'textSizeLarge', 'outlinedSizeSmall', 'outlinedSizeMedium', 'outlinedSizeLarge', 'containedSizeSmall', 'containedSizeMedium', 'containedSizeLarge', 'sizeMedium', 'sizeSmall', 'sizeLarge', 'fullWidth', 'startIcon', 'endIcon', 'iconSizeSmall', 'iconSizeMedium', 'iconSizeLarge']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (buttonClasses);
 
 /***/ }),
 
@@ -54591,9 +55082,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Toolbar */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
 /* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
 /* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/IconButton */ "./node_modules/@mui/material/IconButton/IconButton.js");
-/* harmony import */ var _mui_material_Alert__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material/Alert */ "./node_modules/@mui/material/Alert/Alert.js");
-/* harmony import */ var _mui_icons_material_SaveAlt__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/SaveAlt */ "./node_modules/@mui/icons-material/SaveAlt.js");
-/* harmony import */ var _mui_icons_material_InputSharp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/icons-material/InputSharp */ "./node_modules/@mui/icons-material/InputSharp.js");
+/* harmony import */ var _mui_material_Alert__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material/Alert */ "./node_modules/@mui/material/Alert/Alert.js");
+/* harmony import */ var _mui_icons_material_FileDownloadSharp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/FileDownloadSharp */ "./node_modules/@mui/icons-material/FileDownloadSharp.js");
+/* harmony import */ var _mui_icons_material_OpenInBrowser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/OpenInBrowser */ "./node_modules/@mui/icons-material/OpenInBrowser.js");
+/* harmony import */ var _mui_icons_material_HelpOutline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/icons-material/HelpOutline */ "./node_modules/@mui/icons-material/HelpOutline.js");
 
 
 
@@ -54603,17 +55095,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+function ClickHelp() {
+    console.log("click help button");
+}
+function ClickInput() {
+    console.log("click input button");
+}
+function ClickOutput() {
+    console.log("click output button");
+}
 function Main_1() {
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { flexGrow: 1 } },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], { position: "static" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null,
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], { variant: "body1", component: "div", sx: { flexGrow: 1 } }, "\u30C7\u30E2\u30F3\u30B2\u30A4\u30BA\u3000\u30A8\u30AF\u30B9\u30C8\u30E9"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], { size: "small", color: "inherit", onClick: () => { ; } },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_InputSharp__WEBPACK_IMPORTED_MODULE_6__["default"], null)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], { size: "small", color: "inherit", onClick: () => { ; } },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_SaveAlt__WEBPACK_IMPORTED_MODULE_7__["default"], null))))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Alert__WEBPACK_IMPORTED_MODULE_8__["default"], { severity: "info", icon: false, sx: { px: "16px", py: "0px" } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], { size: "small", color: "inherit", onClick: () => { ClickHelp(); } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_HelpOutline__WEBPACK_IMPORTED_MODULE_6__["default"], null)),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], { size: "small", color: "inherit", onClick: () => { ClickInput(); } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_OpenInBrowser__WEBPACK_IMPORTED_MODULE_7__["default"], null)),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], { size: "small", color: "inherit", onClick: () => { ClickOutput(); } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_FileDownloadSharp__WEBPACK_IMPORTED_MODULE_8__["default"], null))))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Alert__WEBPACK_IMPORTED_MODULE_9__["default"], { severity: "info", icon: false, sx: { px: "16px", py: "0px" } },
             "\u30FB\u30C0\u30F3\u30B8\u30E7\u30F3RPG",
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null),
             "\u30FBNintendo Switch\u2122 / PlayStation\u00AE4",
@@ -54702,16 +55206,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/BottomNavigation */ "./node_modules/@mui/material/BottomNavigation/BottomNavigation.js");
-/* harmony import */ var _mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/BottomNavigationAction */ "./node_modules/@mui/material/BottomNavigationAction/BottomNavigationAction.js");
-/* harmony import */ var _mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/icons-material/Restore */ "./node_modules/@mui/icons-material/Restore.js");
-/* harmony import */ var _mui_icons_material_Favorite__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/Favorite */ "./node_modules/@mui/icons-material/Favorite.js");
-/* harmony import */ var _mui_icons_material_Archive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/Archive */ "./node_modules/@mui/icons-material/Archive.js");
-/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
-/* harmony import */ var _mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/lab/TabContext */ "./node_modules/@mui/lab/TabContext/TabContext.js");
-/* harmony import */ var _mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/lab/TabPanel */ "./node_modules/@mui/lab/TabPanel/TabPanel.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/BottomNavigation */ "./node_modules/@mui/material/BottomNavigation/BottomNavigation.js");
+/* harmony import */ var _mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/BottomNavigationAction */ "./node_modules/@mui/material/BottomNavigationAction/BottomNavigationAction.js");
+/* harmony import */ var _mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/Restore */ "./node_modules/@mui/icons-material/Restore.js");
+/* harmony import */ var _mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material/DriveFileRenameOutlineSharp */ "./node_modules/@mui/icons-material/DriveFileRenameOutlineSharp.js");
+/* harmony import */ var _mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material/Star */ "./node_modules/@mui/icons-material/Star.js");
+/* harmony import */ var _mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/AnnouncementSharp */ "./node_modules/@mui/icons-material/AnnouncementSharp.js");
+/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
+/* harmony import */ var _mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/lab/TabContext */ "./node_modules/@mui/lab/TabContext/TabContext.js");
+/* harmony import */ var _mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/lab/TabPanel */ "./node_modules/@mui/lab/TabPanel/TabPanel.js");
 /* harmony import */ var _Main_3_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Main_3_1 */ "./src/Main_3_1.tsx");
+/* harmony import */ var _Main_3_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main_3_2 */ "./src/Main_3_2.tsx");
+
+
 
 
 
@@ -54727,31 +55235,35 @@ function Main_3() {
     const [valueTab, setValueTab] = react__WEBPACK_IMPORTED_MODULE_0__.useState('1');
     const [valueBtm, setValueBtm] = react__WEBPACK_IMPORTED_MODULE_0__.useState(0);
     const ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { height: "698px", maxHeight: "698px", minHeight: "698px", overflow: "auto" } },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { height: "698px", maxHeight: "698px", minHeight: "698px", overflow: "auto" } },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: {
                 display: "block",
                 position: "fixed",
                 left: 0,
                 bottom: 0,
                 width: "100%",
                 maxWidth: "384px"
-            }, elevation: 3 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_4__["default"], { showLabels: true, value: valueBtm, onChange: (event, newValue) => {
+            }, elevation: 0 },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_5__["default"], { showLabels: true, value: valueBtm, onChange: (event, newValue) => {
                     setValueBtm(newValue);
                     newValue === 0 && setValueTab("1");
                     newValue === 1 && setValueTab("2");
                     newValue === 2 && setValueTab("3");
+                    newValue === 3 && setValueTab("4");
                 } },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_5__["default"], { label: "\u5B9D\u306E\u5730\u56F3", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_6__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_5__["default"], { label: "None", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Favorite__WEBPACK_IMPORTED_MODULE_7__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_5__["default"], { label: "None", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Archive__WEBPACK_IMPORTED_MODULE_8__["default"], null) }))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_9__["default"], { value: valueTab },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_10__["default"], { value: "1" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "\u5B9D\u306E\u5730\u56F3", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_7__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "\u653B\u7565\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_8__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "None", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_9__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "\u88C5\u5099", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_10__["default"], null) }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_11__["default"], { value: valueTab },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "1" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_1__WEBPACK_IMPORTED_MODULE_1__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_10__["default"], { value: "2" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_1__WEBPACK_IMPORTED_MODULE_1__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_10__["default"], { value: "3" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_1__WEBPACK_IMPORTED_MODULE_1__["default"], null)))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "2" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "3" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "4" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3);
 
@@ -54770,6 +55282,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/Button */ "./node_modules/@mui/material/Button/Button.js");
+/* harmony import */ var _mui_icons_material_FileDownloadSharp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/FileDownloadSharp */ "./node_modules/@mui/icons-material/FileDownloadSharp.js");
 /* harmony import */ var react_bootstrap_table_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap-table-next */ "./node_modules/react-bootstrap-table-next/lib/index.js");
 /* harmony import */ var react_bootstrap_table2_filter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap-table2-filter */ "./node_modules/react-bootstrap-table2-filter/lib/index.js");
 /* harmony import */ var _selectOptionsDemon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./selectOptionsDemon */ "./src/selectOptionsDemon.tsx");
@@ -54781,23 +55296,95 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const selectRow = {
-    mode: 'checkbox',
-    clickToSelect: true,
-    style: { backgroundColor: '#ccc' }
-};
+
+
+
 const columns = [
-    { dataField: 'id', text: '地図', headerStyle: { width: '48px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, headerAlign: "center", align: "center", },
-    { dataField: 'dg', text: 'ダンジョン', headerStyle: { width: '92px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, filter: (0,react_bootstrap_table2_filter__WEBPACK_IMPORTED_MODULE_2__.selectFilter)({ options: _selectOptionsDungeon__WEBPACK_IMPORTED_MODULE_4__["default"] }), headerAlign: "center", align: "center", },
-    { dataField: 'er', text: 'エリア', headerStyle: { width: '100px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, headerAlign: "center", align: "center", },
+    { dataField: 'id', text: 'ID', hidden: true, },
+    { dataField: 'item', text: '地図', headerStyle: { width: '48px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, headerAlign: "center", align: "center", },
+    { dataField: 'dg', text: 'ダンジョン', sort: true, headerStyle: { width: '92px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, filter: (0,react_bootstrap_table2_filter__WEBPACK_IMPORTED_MODULE_2__.selectFilter)({ options: _selectOptionsDungeon__WEBPACK_IMPORTED_MODULE_4__["default"] }), headerAlign: "center", align: "center", },
+    { dataField: 'er', text: 'エリア', sort: true, headerStyle: { width: '100px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, headerAlign: "center", align: "center", },
     { dataField: 'x', text: 'X', headerStyle: { width: '18px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px', }, headerAlign: "center", align: "right", },
     { dataField: 'y', text: 'Y', headerStyle: { width: '18px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px', }, headerAlign: "center", align: "right", },
-    { dataField: 'dm', text: 'デモン', headerStyle: { width: '88px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, filter: (0,react_bootstrap_table2_filter__WEBPACK_IMPORTED_MODULE_2__.selectFilter)({ options: _selectOptionsDemon__WEBPACK_IMPORTED_MODULE_3__["default"] }), headerAlign: "center", align: "center", },
+    { dataField: 'dm', text: 'デモン', headerStyle: { width: '88px', fontSize: '11px', verticalAlign: "top", }, style: { fontSize: '11px' }, filter: (0,react_bootstrap_table2_filter__WEBPACK_IMPORTED_MODULE_2__.multiSelectFilter)({ options: _selectOptionsDemon__WEBPACK_IMPORTED_MODULE_3__["default"] }), headerAlign: "center", align: "center", },
 ];
+const localStorageTMapRaw = localStorage.getItem('treasureMap');
+if (!localStorageTMapRaw) {
+    localStorage.setItem('treasureMap', "[]");
+}
+let localStorageTMap = [];
 function Main_3_1() {
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap_table_next__WEBPACK_IMPORTED_MODULE_1__["default"], { keyField: 'id', data: _treasureMap__WEBPACK_IMPORTED_MODULE_5__["default"], columns: columns, selectRow: selectRow, filter: (0,react_bootstrap_table2_filter__WEBPACK_IMPORTED_MODULE_2__["default"])(), filterPosition: "top", condensed: true, bootstrap4: true }));
+    // チェックボックスの状態を管理する処理
+    const [selectedTMap, setSelectedTMap] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
+    const addTMap = (r) => {
+        const localStorageTMap = JSON.parse(localStorageTMapRaw);
+        setSelectedTMap([...localStorageTMap]);
+        const localStorageItem = [...localStorageTMap, r];
+        localStorage.setItem('treasureMap', JSON.stringify(localStorageItem));
+    };
+    const delTMap = (r) => {
+        const localStorageTMap = JSON.parse(localStorageTMapRaw);
+        setSelectedTMap([...localStorageTMap]);
+        const localStorageItem = localStorageTMap.filter(item => item !== r);
+        localStorage.setItem('treasureMap', JSON.stringify(localStorageItem));
+    };
+    function handleOnSelect(row, isSelected, rowIndex, e) {
+        isSelected ? addTMap(row.id) : delTMap(row.id);
+        return true;
+    }
+    const selectRow = {
+        mode: 'checkbox',
+        clickToSelect: true,
+        hideSelectAll: true,
+        selected: selectedTMap,
+        onSelect: handleOnSelect,
+        style: { backgroundColor: '#999' }
+    };
+    // ファイルに保存する処理
+    const ClickOutput = () => {
+        const localStorageTMap = JSON.parse(localStorageTMapRaw);
+        const blob = new Blob([JSON.stringify(localStorageTMap.sort((a, b) => a - b))], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        document.body.appendChild(a);
+        a.download = 'dgex-t-map.txt';
+        a.href = url;
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+    };
+    // 画面の状態が変わる毎に実行される
+    const localStorageTMapRaw = localStorage.getItem('treasureMap');
+    selectRow.selected = JSON.parse(localStorageTMapRaw);
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_6__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_6__["default"], { sx: { display: 'flex', flexDirection: 'row-reverse', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Button__WEBPACK_IMPORTED_MODULE_7__["default"], { onClick: ClickOutput, color: "secondary", variant: "outlined", startIcon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_FileDownloadSharp__WEBPACK_IMPORTED_MODULE_8__["default"], { fontSize: "inherit", color: "secondary" }), size: "small", sx: { fontSize: "11px", py: 0 } }, "\u30C1\u30A7\u30C3\u30AF\u306E\u6709\u7121\u3092\u30D5\u30A1\u30A4\u30EB\u306B\u4FDD\u5B58\u3059\u308B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap_table_next__WEBPACK_IMPORTED_MODULE_1__["default"], { keyField: 'id', data: _treasureMap__WEBPACK_IMPORTED_MODULE_5__["default"], columns: columns, selectRow: selectRow, filter: (0,react_bootstrap_table2_filter__WEBPACK_IMPORTED_MODULE_2__["default"])(), filterPosition: "top", condensed: true, bootstrap4: true, hover: true })));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3_1);
+
+
+/***/ }),
+
+/***/ "./src/Main_3_2.tsx":
+/*!**************************!*\
+  !*** ./src/Main_3_2.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+
+
+function Main_3_2() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3_2);
 
 
 /***/ }),
@@ -54869,42 +55456,106 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const treasureMap = [
-    { id: "赤の一", dg: "赤の旧市街", er: "永炎の市街", x: 15, y: 17, dm: "コメット" },
-    { id: "赤の二", dg: "青の旧市街", er: "シュメル湖", x: 8, y: 12, dm: "コメット" },
-    { id: "赤の三", dg: "グリモダール城", er: "春の王宮", x: 12, y: 9, dm: "マルス" },
-    { id: "赤の四", dg: "奴隷墓地", er: "名無し達の墓所", x: 13, y: 19, dm: "クロノス" },
-    { id: "赤の五", dg: "グリモダール城", er: "春の王宮", x: 8, y: 14, dm: "ネプトゥヌス" },
-    { id: "赤の六", dg: "星樹のとばり", er: "妖精たちの隠れ里", x: 13, y: 7, dm: "ヘルメス" },
-    { id: "赤の七", dg: "グリモダール城", er: "宝物区画", x: 11, y: 6, dm: "ユピテル" },
-    { id: "赤の八", dg: "グリモダール城", er: "夏のエデン", x: 14, y: 10, dm: "ユピテル" },
-    { id: "赤の九", dg: "グリモダール城", er: "兵営区画", x: 14, y: 15, dm: "ウラヌス" },
-    { id: "青の一", dg: "赤の旧市街", er: "湖水侵食街", x: 4, y: 12, dm: "コメット" },
-    { id: "青の二", dg: "無限坑道", er: "浸水鉱区", x: 9, y: 1, dm: "コメット" },
-    { id: "青の三", dg: "奴隷墓地", er: "名無し達の墓所", x: 9, y: 15, dm: "クロノス" },
-    { id: "青の四", dg: "地下牢獄", er: "作業場", x: 13, y: 7, dm: "ヘルメス" },
-    { id: "青の五", dg: "グリモダール城", er: "場内昇降区", x: 9, y: 7, dm: "クロノス" },
-    { id: "青の六", dg: "無限坑道", er: "明岩鉱区", x: 15, y: 2, dm: "ヘルメス" },
-    { id: "青の七", dg: "地下牢獄", er: "管理棟", x: 1, y: 18, dm: "ユピテル" },
-    { id: "青の八", dg: "星樹のとばり", er: "星明りの森", x: 4, y: 5, dm: "プルト" },
-    { id: "青の九", dg: "無限坑道", er: "明岩鉱区", x: 16, y: 10, dm: "ウラヌス" },
-    { id: "黄の一", dg: "星樹のとばり", er: "白の庭園", x: 3, y: 13, dm: "コメット" },
-    { id: "黄の二", dg: "星樹のとばり", er: "木漏れ日の森", x: 1, y: 9, dm: "マルス" },
-    { id: "黄の三", dg: "星樹のとばり", er: "茨の庭園", x: 3, y: 0, dm: "クロノス" },
-    { id: "黄の四", dg: "赤の旧市街", er: "水運商区", x: 5, y: 8, dm: "ネプトゥヌス" },
-    { id: "黄の五", dg: "グリモダール城", er: "冬のエデン", x: 10, y: 12, dm: "ヴィーナス" },
-    { id: "黄の六", dg: "奴隷墓地", er: "呪われた霊園", x: 14, y: 0, dm: "ネプトゥヌス" },
-    { id: "黄の七", dg: "無限坑道", er: "古王の道", x: 6, y: 2, dm: "ユピテル" },
-    { id: "黄の八", dg: "地下牢獄", er: "貴賓用監獄", x: 11, y: 2, dm: "プルト" },
-    { id: "黄の九", dg: "グリモダール城", er: "冬のエデン", x: 8, y: 9, dm: "ウラヌス" },
-    { id: "緑の一", dg: "星樹のとばり", er: "木漏れ日の森", x: 18, y: 7, dm: "コメット" },
-    { id: "緑の二", dg: "赤の旧市街", er: "火竜の足跡", x: 14, y: 7, dm: "マルス" },
-    { id: "緑の三", dg: "星樹のとばり", er: "白の庭園", x: 14, y: 4, dm: "クロノス" },
-    { id: "緑の四", dg: "無限坑道", er: "灼熱鉱区", x: 17, y: 3, dm: "ヘルメス" },
-    { id: "緑の五", dg: "地下牢獄", er: "監獄部屋", x: 8, y: 10, dm: "ヴィーナス" },
-    { id: "緑の六", dg: "グリモダール城", er: "夏のエデン", x: 16, y: 13, dm: "ヘルメス" },
-    { id: "緑の七", dg: "無限坑道", er: "大空洞", x: 0, y: 10, dm: "ユピテル" },
-    { id: "緑の八", dg: "グリモダール城", er: "礼拝区画", x: 14, y: 8, dm: "プルト" },
-    { id: "緑の九", dg: "グリモダール城", er: "春の王宮", x: 17, y: 16, dm: "ウラヌス" },
+    { id: 0, item: "赤の一", dg: "赤の旧市街", er: "永炎の市街", x: 15, y: 17, dm: "コメット" },
+    { id: 1, item: "赤の二", dg: "青の旧市街", er: "シュメル湖", x: 8, y: 12, dm: "コメット" },
+    { id: 2, item: "赤の三", dg: "グリモダール城", er: "春の王宮", x: 12, y: 9, dm: "マルス" },
+    { id: 3, item: "赤の四", dg: "奴隷墓地", er: "名無し達の墓所", x: 13, y: 19, dm: "クロノス" },
+    { id: 4, item: "赤の五", dg: "グリモダール城", er: "春の王宮", x: 8, y: 14, dm: "ネプトゥヌス" },
+    { id: 5, item: "赤の六", dg: "星樹のとばり", er: "妖精たちの隠れ里", x: 13, y: 7, dm: "ヘルメス" },
+    { id: 6, item: "赤の七", dg: "グリモダール城", er: "宝物区画", x: 11, y: 6, dm: "ユピテル" },
+    { id: 7, item: "赤の八", dg: "グリモダール城", er: "夏のエデン", x: 14, y: 10, dm: "ユピテル" },
+    { id: 8, item: "赤の九", dg: "グリモダール城", er: "兵営区画", x: 14, y: 15, dm: "ウラヌス" },
+    { id: 9, item: "青の一", dg: "赤の旧市街", er: "湖水侵食街", x: 4, y: 12, dm: "コメット" },
+    { id: 10, item: "青の二", dg: "無限坑道", er: "浸水鉱区", x: 9, y: 1, dm: "コメット" },
+    { id: 11, item: "青の三", dg: "奴隷墓地", er: "名無し達の墓所", x: 9, y: 15, dm: "クロノス" },
+    { id: 12, item: "青の四", dg: "地下牢獄", er: "作業場", x: 13, y: 7, dm: "ヘルメス" },
+    { id: 13, item: "青の五", dg: "グリモダール城", er: "場内昇降区", x: 9, y: 7, dm: "クロノス" },
+    { id: 14, item: "青の六", dg: "無限坑道", er: "明岩鉱区", x: 15, y: 2, dm: "ヘルメス" },
+    { id: 15, item: "青の七", dg: "地下牢獄", er: "管理棟", x: 1, y: 18, dm: "ユピテル" },
+    { id: 16, item: "青の八", dg: "星樹のとばり", er: "星明りの森", x: 4, y: 5, dm: "プルト" },
+    { id: 17, item: "青の九", dg: "無限坑道", er: "明岩鉱区", x: 16, y: 10, dm: "ウラヌス" },
+    { id: 18, item: "黄の一", dg: "星樹のとばり", er: "白の庭園", x: 3, y: 13, dm: "コメット" },
+    { id: 19, item: "黄の二", dg: "星樹のとばり", er: "木漏れ日の森", x: 1, y: 9, dm: "マルス" },
+    { id: 20, item: "黄の三", dg: "星樹のとばり", er: "茨の庭園", x: 3, y: 0, dm: "クロノス" },
+    { id: 21, item: "黄の四", dg: "赤の旧市街", er: "水運商区", x: 5, y: 8, dm: "ネプトゥヌス" },
+    { id: 22, item: "黄の五", dg: "グリモダール城", er: "冬のエデン", x: 10, y: 12, dm: "ヴィーナス" },
+    { id: 23, item: "黄の六", dg: "奴隷墓地", er: "呪われた霊園", x: 14, y: 0, dm: "ネプトゥヌス" },
+    { id: 24, item: "黄の七", dg: "無限坑道", er: "古王の道", x: 6, y: 2, dm: "ユピテル" },
+    { id: 25, item: "黄の八", dg: "地下牢獄", er: "貴賓用監獄", x: 11, y: 2, dm: "プルト" },
+    { id: 26, item: "黄の九", dg: "グリモダール城", er: "冬のエデン", x: 8, y: 9, dm: "ウラヌス" },
+    { id: 27, item: "緑の一", dg: "星樹のとばり", er: "木漏れ日の森", x: 18, y: 7, dm: "コメット" },
+    { id: 28, item: "緑の二", dg: "赤の旧市街", er: "火竜の足跡", x: 14, y: 7, dm: "マルス" },
+    { id: 29, item: "緑の三", dg: "星樹のとばり", er: "白の庭園", x: 14, y: 4, dm: "クロノス" },
+    { id: 30, item: "緑の四", dg: "無限坑道", er: "灼熱鉱区", x: 17, y: 3, dm: "ヘルメス" },
+    { id: 31, item: "緑の五", dg: "地下牢獄", er: "監獄部屋", x: 8, y: 10, dm: "ヴィーナス" },
+    { id: 32, item: "緑の六", dg: "グリモダール城", er: "夏のエデン", x: 16, y: 13, dm: "ヘルメス" },
+    { id: 33, item: "緑の七", dg: "無限坑道", er: "大空洞", x: 0, y: 10, dm: "ユピテル" },
+    { id: 34, item: "緑の八", dg: "グリモダール城", er: "礼拝区画", x: 14, y: 8, dm: "プルト" },
+    { id: 35, item: "緑の九", dg: "グリモダール城", er: "春の王宮", x: 17, y: 16, dm: "ウラヌス" },
+    { id: 36, item: "茶の一", dg: "星樹のとばり", er: "茨の庭園", x: 5, y: 8, dm: "コメット" },
+    { id: 37, item: "茶の二", dg: "星樹のとばり", er: "妖精たちの隠れ里", x: 18, y: 17, dm: "マルス" },
+    { id: 38, item: "茶の三", dg: "地下牢獄", er: "管理棟", x: 18, y: 17, dm: "クロノス" },
+    { id: 39, item: "茶の四", dg: "グリモダール城", er: "場内昇降区", x: 12, y: 17, dm: "ネプトゥヌス" },
+    { id: 40, item: "茶の五", dg: "星樹のとばり", er: "茨の庭園", x: 18, y: 14, dm: "コメット" },
+    { id: 41, item: "茶の六", dg: "グリモダール城", er: "動力区画", x: 13, y: 9, dm: "ネプトゥヌス" },
+    { id: 42, item: "茶の七", dg: "グリモダール城", er: "春の王宮", x: 4, y: 6, dm: "ユピテル" },
+    { id: 43, item: "茶の八", dg: "無限坑道", er: "暗岩鉱区", x: 10, y: 17, dm: "プルト" },
+    { id: 44, item: "茶の九", dg: "奴隷墓地", er: "古王の廟堂", x: 13, y: 8, dm: "エリス" },
+    { id: 45, item: "紫の一", dg: "グリモダール城-", er: "礼拝区画", x: 2, y: 17, dm: "コメット" },
+    { id: 46, item: "紫の二", dg: "黒い檻", er: "戒一マルス", x: 14, y: 7, dm: "マルス" },
+    { id: 47, item: "紫の三", dg: "グリモダール城-", er: "作戦区画", x: 12, y: 5, dm: "ヘルメス" },
+    { id: 48, item: "紫の四", dg: "グリモダール城-", er: "夏のエデン", x: 18, y: 4, dm: "ネプトゥヌス" },
+    { id: 49, item: "紫の五", dg: "無限坑道", er: "坑道昇降区", x: 6, y: 13, dm: "アストロ" },
+    { id: 50, item: "紫の六", dg: "奴隷墓地", er: "呪われた霊園", x: 4, y: 17, dm: "クロノス" },
+    { id: 51, item: "紫の七", dg: "赤の旧市街", er: "水運商区", x: 4, y: 12, dm: "マルス" },
+    { id: 52, item: "紫の八", dg: "グリモダール城-", er: "礼拝区画", x: 9, y: 3, dm: "ウラヌス" },
+    { id: 53, item: "紫の九", dg: "グリモダール城-", er: "秋の王宮", x: 6, y: 7, dm: "エリス" },
+    { id: 54, item: "黒の一", dg: "星樹のとばり", er: "迷いの森", x: 18, y: 13, dm: "マルス" },
+    { id: 55, item: "黒の二", dg: "グリモダール城", er: "兵営区画", x: 15, y: 0, dm: "クロノス" },
+    { id: 56, item: "黒の三", dg: "青の旧市街", er: "沈没市街", x: 9, y: 8, dm: "ネプトゥヌス" },
+    { id: 57, item: "黒の四", dg: "黒い檻", er: "戒一ヴィーナス", x: 5, y: 11, dm: "ヴィーナス" },
+    { id: 58, item: "黒の五", dg: "奴隷墓地", er: "古王の廟堂", x: 15, y: 16, dm: "ユピテル" },
+    { id: 59, item: "黒の六", dg: "星樹のとばり", er: "迷いの森", x: 6, y: 14, dm: "アストロ" },
+    { id: 60, item: "黒の七", dg: "地下牢獄", er: "重犯罪人用監獄", x: 4, y: 14, dm: "プルト" },
+    { id: 61, item: "黒の八", dg: "黒い檻", er: "戒ーウラヌス", x: 6, y: 8, dm: "ウラヌス" },
+    { id: 62, item: "黒の九", dg: "黒い檻", er: "戒一テラ", x: 10, y: 14, dm: "エリス" },
+    { id: 63, item: "白の一", dg: "奴隷墓地", er: "名無し達の墓所", x: 8, y: 12, dm: "マルス" },
+    { id: 64, item: "白の二", dg: "星樹のとばり", er: "星明りの森", x: 2, y: 16, dm: "クロノス" },
+    { id: 65, item: "白の三", dg: "黒い檻", er: "戒一ヘルメス", x: 10, y: 7, dm: "ヘルメス" },
+    { id: 66, item: "白の四", dg: "無限坑道", er: "灼熱鉱区", x: 12, y: 18, dm: "ヴィーナス" },
+    { id: 67, item: "白の五", dg: "黒い檻", er: "戒一アストロ", x: 10, y: 12, dm: "アストロ" },
+    { id: 68, item: "白の六", dg: "無限坑道", er: "火の精霊窟", x: 1, y: 8, dm: "ヴィーナス" },
+    { id: 69, item: "白の七", dg: "地下牢獄", er: "貴賓用監獄", x: 11, y: 17, dm: "プルト" },
+    { id: 70, item: "白の八", dg: "グリモダール城", er: "秋の王宮", x: 11, y: 13, dm: "ウラヌス" },
+    { id: 71, item: "白の九", dg: "グリモダール城", er: "冬のエデン", x: 12, y: 6, dm: "エリス" },
+    { id: 72, item: "灰の一", dg: "黒い檻", er: "戒一コメット", x: 6, y: 9, dm: "コメット" },
+    { id: 73, item: "灰の二", dg: "奴隷墓地", er: "古王の廟堂", x: 6, y: 9, dm: "クロノス" },
+    { id: 74, item: "灰の三", dg: "無限坑道", er: "大空洞", x: 18, y: 12, dm: "ヘルメス" },
+    { id: 75, item: "灰の四", dg: "グリモダール城", er: "展望区画", x: 9, y: 14, dm: "ヴィーナス" },
+    { id: 76, item: "灰の五", dg: "グリモダール城", er: "秋の王宮", x: 3, y: 4, dm: "アストロ" },
+    { id: 77, item: "灰の六", dg: "地下牢獄", er: "管理棟", x: 2, y: 4, dm: "ヴィーナス" },
+    { id: 78, item: "灰の七", dg: "グリモダール城", er: "兵営区画", x: 8, y: 15, dm: "マルス" },
+    { id: 79, item: "灰の八", dg: "無限坑道", er: "灼熱鉱区", x: 1, y: 5, dm: "ウラヌス" },
+    { id: 80, item: "灰の九", dg: "グリモダール城", er: "冬のエデン", x: 4, y: 13, dm: "エリス" },
+    { id: 81, item: "銀の一", dg: "地下牢獄", er: "貴賓用監獄", x: 8, y: 13, dm: "マルス" },
+    { id: 82, item: "銀の二", dg: "無限坑道", er: "水の精霊窟", x: 12, y: 10, dm: "クロノス" },
+    { id: 83, item: "銀の三", dg: "無限坑道", er: "暗岩鉱区", x: 13, y: 3, dm: "ネプトゥヌス" },
+    { id: 84, item: "銀の四", dg: "グリモダール城", er: "宝物区画", x: 0, y: 19, dm: "アストロ" },
+    { id: 85, item: "銀の五", dg: "グリモダール城", er: "巨大倉庫", x: 16, y: 14, dm: "ユピテル" },
+    { id: 86, item: "銀の六", dg: "地下牢獄", er: "貴賓用監獄", x: 2, y: 11, dm: "アストロ" },
+    { id: 87, item: "銀の七", dg: "星樹のとばり", er: "妖精たちの隠れ里", x: 7, y: 4, dm: "ウラヌス" },
+    { id: 88, item: "銀の八", dg: "グリモダール城", er: "秋の王宮", x: 18, y: 15, dm: "エリス" },
+    { id: 89, item: "銀の九", dg: "黒い檻", er: "戒一エリス", x: 4, y: 5, dm: "エリス" },
+    { id: 90, item: "金の一", dg: "青の旧市街", er: "沈没市街", x: 9, y: 18, dm: "マルス" },
+    { id: 91, item: "金の二", dg: "無限坑道", er: "浸水鉱区", x: 13, y: 12, dm: "クロノス" },
+    { id: 92, item: "金の三", dg: "グリモダール城", er: "時計塔8F", x: 16, y: 16, dm: "ネプトゥヌス" },
+    { id: 93, item: "金の四", dg: "青の旧市街", er: "沈没市街", x: 13, y: 3, dm: "アストロ" },
+    { id: 94, item: "金の五", dg: "星樹のとばり", er: "迷いの森", x: 3, y: 8, dm: "ヘルメス" },
+    { id: 95, item: "金の六", dg: "グリモダール城", er: "作戦区画", x: 15, y: 10, dm: "コメット" },
+    { id: 96, item: "金の七", dg: "グリモダール城", er: "夏のエデン", x: 6, y: 7, dm: "プルト" },
+    { id: 97, item: "金の八", dg: "無限坑道", er: "坑道昇降区", x: 14, y: 9, dm: "エリス" },
+    { id: 98, item: "金の九", dg: "黒い檻", er: "戒一ソル", x: 11, y: 6, dm: "エリス" },
+    { id: 99, item: "虹の一", dg: "黒い檻", er: "戒一エリス", x: 19, y: 4, dm: "ｳﾗﾇｽ.ﾌﾟﾙﾄ.ｴﾘｽ" },
 ];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (treasureMap);
 

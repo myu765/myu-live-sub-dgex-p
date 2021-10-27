@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="react-bootstrap-table2.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+      *:focus {
+        outline: none  !important; 
+        -webkit-tap-highlight-color: none !important;
+      }
+      a {
+        outline: none  !important; 
+        -webkit-tap-highlight-color: none !important;
+      }
       html, body {
         height: 100%;
         margin: 0;
@@ -35,6 +43,7 @@
       .table-sm td, .table-sm th {
         padding: 1px 0px 1px 0px;
         line-height: 14px;
+        user-select: none;
       }
       .react-bootstrap-table td > .selection-input-4, .react-bootstrap-table th > .selection-input-4 {
         margin: 0px 0px 0px 7px;
@@ -52,6 +61,9 @@
       .react-bootstrap-table th[data-row-selection] {
         width: 30px;
         vertical-align: middle;
+      }
+      .filter-label {
+        margin-bottom: 0px;
       }
     </style>
   </head>
