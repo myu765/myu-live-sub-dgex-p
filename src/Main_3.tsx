@@ -44,8 +44,8 @@ function Main_3() {
         >
           <BottomNavigationAction label="宝の地図" icon={<RestoreIcon />} />
           <BottomNavigationAction label="攻略メモ" icon={<AnnouncementSharpIcon />} />
-          <BottomNavigationAction label="None" icon={<DriveFileRenameOutlineSharpIcon />} />
-          <BottomNavigationAction label="装備" icon={<StarIcon />} />
+          <BottomNavigationAction label="ノート" icon={<DriveFileRenameOutlineSharpIcon />} />
+          <BottomNavigationAction label="装備メモ" icon={<StarIcon />} />
         </BottomNavigation>
       </Paper>
       <TabContext value={valueTab}>
