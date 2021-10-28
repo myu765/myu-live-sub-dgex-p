@@ -29,13 +29,13 @@ function Main_3_1 () {
   const [selectedTMap, setSelectedTMap] = React.useState<number[]>([])
   const addTMap = (r: number) => {
     const localStorageTMap:number[] = JSON.parse(localStorageTMapRaw)
-    setSelectedTMap([...localStorageTMap])
+    setSelectedTMap([...localStorageTMap, r])
     const localStorageItem = [...localStorageTMap, r]
     localStorage.setItem('treasureMap', JSON.stringify(localStorageItem))
   }
   const delTMap = (r: number) => {
     const localStorageTMap:number[] = JSON.parse(localStorageTMapRaw)
-    setSelectedTMap([...localStorageTMap])
+    setSelectedTMap([...localStorageTMap.filter(item => item !== r)])
     const localStorageItem = localStorageTMap.filter(item => item !== r)
     localStorage.setItem('treasureMap', JSON.stringify(localStorageItem))
   }
