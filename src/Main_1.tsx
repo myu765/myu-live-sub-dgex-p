@@ -5,20 +5,31 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Alert from '@mui/material/Alert';
-import FileDownloadSharpIcon from '@mui/icons-material/FileDownloadSharp';
-import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import { TransitionProps } from '@mui/material/transitions';
+import Slide from '@mui/material/Slide';
+import CloseIcon from '@mui/icons-material/Close';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import Main_1_1 from "./Main_1_1";
 
-function ClickHelp() {
-  console.log("click help button")
-}
-function ClickInput() {
-  console.log("click input button")
-}
-function ClickOutput() {
-  console.log("click output button")
-}
+const Transition = React.forwardRef(function Transition(
+  props: TransitionProps & {
+    children: React.ReactElement;
+  },
+  ref: React.Ref<unknown>,
+) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
 function Main_1() {
+  const [open, setOpen] = React.useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <Box>
       <Box sx={{ flexGrow: 1 }}>
@@ -27,14 +38,8 @@ function Main_1() {
             <Typography variant="body1" component="div" sx={{ flexGrow: 1 }}>
               デモンゲイズ　エクストラ
             </Typography>
-            <IconButton size="small" color="inherit" onClick={ () => { ClickHelp() } }>
+            <IconButton size="small" color="inherit" onClick={ handleClickOpen }>
               <HelpOutlineIcon />
-            </IconButton>
-            <IconButton size="small" color="inherit" onClick={ () => { ClickInput() } }>
-              <OpenInBrowserIcon />
-            </IconButton>
-            <IconButton size="small" color="inherit" onClick={ () => { ClickOutput() } }>
-              <FileDownloadSharpIcon />
             </IconButton>
           </Toolbar>
         </AppBar>
@@ -44,6 +49,32 @@ function Main_1() {
         ・Nintendo Switch™ / PlayStation®4<br />
         ・©2021 KADOKAWA GAMES / EXPERIENCE
       </Alert>
+      <Dialog
+        fullScreen
+        open={open}
+        onClose={handleClose}
+        TransitionComponent={Transition}
+      >
+        <AppBar sx={{ position: 'relative' }}>
+          <Toolbar>
+            <IconButton
+              edge="start"
+              color="inherit"
+              onClick={handleClose}
+              aria-label="close"
+            >
+              <CloseIcon />
+            </IconButton>
+            <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+            このツールについて
+            </Typography>
+            <Button autoFocus color="inherit" onClick={handleClose}>
+              閉じる
+            </Button>
+          </Toolbar>
+        </AppBar>
+        <Main_1_1 />
+      </Dialog>
     </Box>
   )
 }
