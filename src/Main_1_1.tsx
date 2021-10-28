@@ -42,19 +42,19 @@ function Main_1_1() {
           （３）攻略メモ
         </Typography>
         <Typography sx={{ ml: 4, mt: 0 }}  variant="body2">
-          ・作る予定（２週目遊びながら...）
+          ・（作成中）
         </Typography>
         <Typography sx={{ ml: 2, mt: 1 }}  variant="body2">
           （４）ノート
         </Typography>
         <Typography sx={{ ml: 4, mt: 0 }}  variant="body2">
-          ・作る予定（２週目遊びながら...）
+          ・（作成中）
         </Typography>
         <Typography sx={{ ml: 2, mt: 1 }}  variant="body2">
           （５）装備メモ
         </Typography>
         <Typography sx={{ ml: 4, mt: 0 }}  variant="body2">
-          ・作る予定（２週目遊びながら...）
+          ・良さげなアイテムのメモ（作成中）
         </Typography>
         <Divider textAlign="right">以上</Divider>
         <Typography sx={{ ml: 2, mt: 2, fontWeight: 'bold' }} variant="subtitle1" component="div">

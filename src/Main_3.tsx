@@ -11,10 +11,11 @@ import TabContext from '@mui/lab/TabContext';
 import TabPanel from '@mui/lab/TabPanel';
 import Main_3_1 from "./Main_3_1";
 import Main_3_2 from "./Main_3_2";
+import Main_3_4 from "./Main_3_4";
 
 function Main_3() {
-  const [valueTab, setValueTab] = React.useState('1');
-  const [valueBtm, setValueBtm] = React.useState(0);
+  const [valueTab, setValueTab] = React.useState('4');
+  const [valueBtm, setValueBtm] = React.useState(3);
   const ref = React.useRef<HTMLDivElement>(null);
   return (
     <Box
@@ -52,7 +53,7 @@ function Main_3() {
         <TabPanel value="1"><Main_3_1 /></TabPanel>
         <TabPanel value="2"><Main_3_2 /></TabPanel>
         <TabPanel value="3"><Main_3_2 /></TabPanel>
-        <TabPanel value="4"><Main_3_2 /></TabPanel>
+        <TabPanel value="4"><Main_3_4 /></TabPanel>
       </TabContext>
     </Box>
   );
