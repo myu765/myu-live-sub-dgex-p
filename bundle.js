@@ -16561,6 +16561,1509 @@ const svgIconClasses = (0,_mui_core__WEBPACK_IMPORTED_MODULE_1__["default"])('Mu
 
 /***/ }),
 
+/***/ "./node_modules/@mui/material/TabScrollButton/TabScrollButton.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@mui/material/TabScrollButton/TabScrollButton.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/composeClasses/composeClasses.js");
+/* harmony import */ var _internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../internal/svg-icons/KeyboardArrowLeft */ "./node_modules/@mui/material/internal/svg-icons/KeyboardArrowLeft.js");
+/* harmony import */ var _internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../internal/svg-icons/KeyboardArrowRight */ "./node_modules/@mui/material/internal/svg-icons/KeyboardArrowRight.js");
+/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@mui/material/ButtonBase/ButtonBase.js");
+/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@mui/material/styles/useTheme.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _tabScrollButtonClasses__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./tabScrollButtonClasses */ "./node_modules/@mui/material/TabScrollButton/tabScrollButtonClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var _KeyboardArrowLeft, _KeyboardArrowRight;
+
+const _excluded = ["className", "direction", "orientation", "disabled"];
+
+/* eslint-disable jsx-a11y/aria-role */
+
+
+
+
+
+
+
+
+
+
+
+
+
+const useUtilityClasses = ownerState => {
+  const {
+    classes,
+    orientation,
+    disabled
+  } = ownerState;
+  const slots = {
+    root: ['root', orientation, disabled && 'disabled']
+  };
+  return (0,_mui_core__WEBPACK_IMPORTED_MODULE_6__["default"])(slots, _tabScrollButtonClasses__WEBPACK_IMPORTED_MODULE_7__.getTabScrollButtonUtilityClass, classes);
+};
+
+const TabScrollButtonRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])(_ButtonBase__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  name: 'MuiTabScrollButton',
+  slot: 'Root',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.root, ownerState.orientation && styles[ownerState.orientation]];
+  }
+})(({
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  width: 40,
+  flexShrink: 0,
+  opacity: 0.8,
+  [`&.${_tabScrollButtonClasses__WEBPACK_IMPORTED_MODULE_7__["default"].disabled}`]: {
+    opacity: 0
+  }
+}, ownerState.orientation === 'vertical' && {
+  width: '100%',
+  height: 40,
+  '& svg': {
+    transform: `rotate(${ownerState.isRtl ? -90 : 90}deg)`
+  }
+}));
+const TabScrollButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function TabScrollButton(inProps, ref) {
+  const props = (0,_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_10__["default"])({
+    props: inProps,
+    name: 'MuiTabScrollButton'
+  });
+
+  const {
+    className,
+    direction
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
+
+  const theme = (0,_styles_useTheme__WEBPACK_IMPORTED_MODULE_11__["default"])();
+  const isRtl = theme.direction === 'rtl';
+
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    isRtl
+  }, props);
+
+  const classes = useUtilityClasses(ownerState);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(TabScrollButtonRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    component: "div",
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
+    ref: ref,
+    role: null,
+    ownerState: ownerState,
+    tabIndex: null
+  }, other, {
+    children: direction === 'left' ? _KeyboardArrowLeft || (_KeyboardArrowLeft = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      fontSize: "small"
+    })) : _KeyboardArrowRight || (_KeyboardArrowRight = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      fontSize: "small"
+    }))
+  }));
+});
+ true ? TabScrollButton.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+
+  /**
+   * The direction the button should indicate.
+   */
+  direction: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['left', 'right']).isRequired,
+
+  /**
+   * If `true`, the component is disabled.
+   */
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * The component orientation (layout flow direction).
+   */
+  orientation: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['horizontal', 'vertical']).isRequired,
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TabScrollButton);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/TabScrollButton/tabScrollButtonClasses.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@mui/material/TabScrollButton/tabScrollButtonClasses.js ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getTabScrollButtonUtilityClass": () => (/* binding */ getTabScrollButtonUtilityClass),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClass/generateUtilityClass.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClasses/generateUtilityClasses.js");
+
+function getTabScrollButtonUtilityClass(slot) {
+  return (0,_mui_core__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiTabScrollButton', slot);
+}
+const tabScrollButtonClasses = (0,_mui_core__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiTabScrollButton', ['root', 'vertical', 'horizontal', 'disabled']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabScrollButtonClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Tab/Tab.js":
+/*!***********************************************!*\
+  !*** ./node_modules/@mui/material/Tab/Tab.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/composeClasses/composeClasses.js");
+/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@mui/material/ButtonBase/ButtonBase.js");
+/* harmony import */ var _utils_capitalize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/capitalize */ "./node_modules/@mui/material/utils/capitalize.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _utils_unsupportedProp__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/unsupportedProp */ "./node_modules/@mui/material/utils/unsupportedProp.js");
+/* harmony import */ var _tabClasses__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./tabClasses */ "./node_modules/@mui/material/Tab/tabClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+const _excluded = ["className", "disabled", "disableFocusRipple", "fullWidth", "icon", "indicator", "label", "onChange", "onClick", "onFocus", "selected", "selectionFollowsFocus", "textColor", "value", "wrapped"];
+
+
+
+
+
+
+
+
+
+
+
+
+const useUtilityClasses = ownerState => {
+  const {
+    classes,
+    textColor,
+    fullWidth,
+    wrapped,
+    icon,
+    label,
+    selected,
+    disabled
+  } = ownerState;
+  const slots = {
+    root: ['root', icon && label && 'labelIcon', `textColor${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(textColor)}`, fullWidth && 'fullWidth', wrapped && 'wrapped', selected && 'selected', disabled && 'disabled'],
+    iconWrapper: ['iconWrapper']
+  };
+  return (0,_mui_core__WEBPACK_IMPORTED_MODULE_7__["default"])(slots, _tabClasses__WEBPACK_IMPORTED_MODULE_8__.getTabUtilityClass, classes);
+};
+
+const TabRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])(_ButtonBase__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  name: 'MuiTab',
+  slot: 'Root',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.root, ownerState.label && ownerState.icon && styles.labelIcon, styles[`textColor${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(ownerState.textColor)}`], ownerState.fullWidth && styles.fullWidth, ownerState.wrapped && styles.wrapped];
+  }
+})(({
+  theme,
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, theme.typography.button, {
+  maxWidth: 360,
+  minWidth: 90,
+  position: 'relative',
+  minHeight: 48,
+  flexShrink: 0,
+  padding: '12px 16px',
+  overflow: 'hidden',
+  whiteSpace: 'normal',
+  textAlign: 'center',
+  flexDirection: 'column',
+  lineHeight: 1.25
+}, ownerState.icon && ownerState.label && {
+  minHeight: 72,
+  paddingTop: 9,
+  paddingBottom: 9,
+  [`& > .${_tabClasses__WEBPACK_IMPORTED_MODULE_8__["default"].iconWrapper}`]: {
+    marginBottom: 6
+  }
+}, ownerState.textColor === 'inherit' && {
+  color: 'inherit',
+  opacity: 0.6,
+  // same opacity as theme.palette.text.secondary
+  [`&.${_tabClasses__WEBPACK_IMPORTED_MODULE_8__["default"].selected}`]: {
+    opacity: 1
+  },
+  [`&.${_tabClasses__WEBPACK_IMPORTED_MODULE_8__["default"].disabled}`]: {
+    opacity: theme.palette.action.disabledOpacity
+  }
+}, ownerState.textColor === 'primary' && {
+  color: theme.palette.text.secondary,
+  [`&.${_tabClasses__WEBPACK_IMPORTED_MODULE_8__["default"].selected}`]: {
+    color: theme.palette.primary.main
+  },
+  [`&.${_tabClasses__WEBPACK_IMPORTED_MODULE_8__["default"].disabled}`]: {
+    color: theme.palette.text.disabled
+  }
+}, ownerState.textColor === 'secondary' && {
+  color: theme.palette.text.secondary,
+  [`&.${_tabClasses__WEBPACK_IMPORTED_MODULE_8__["default"].selected}`]: {
+    color: theme.palette.secondary.main
+  },
+  [`&.${_tabClasses__WEBPACK_IMPORTED_MODULE_8__["default"].disabled}`]: {
+    color: theme.palette.text.disabled
+  }
+}, ownerState.fullWidth && {
+  flexShrink: 1,
+  flexGrow: 1,
+  flexBasis: 0,
+  maxWidth: 'none'
+}, ownerState.wrapped && {
+  fontSize: theme.typography.pxToRem(12)
+}));
+const Tab = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Tab(inProps, ref) {
+  const props = (0,_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_11__["default"])({
+    props: inProps,
+    name: 'MuiTab'
+  });
+
+  const {
+    className,
+    disabled = false,
+    disableFocusRipple = false,
+    // eslint-disable-next-line react/prop-types
+    fullWidth,
+    icon: iconProp,
+    // eslint-disable-next-line react/prop-types
+    indicator,
+    label,
+    onChange,
+    onClick,
+    onFocus,
+    // eslint-disable-next-line react/prop-types
+    selected,
+    // eslint-disable-next-line react/prop-types
+    selectionFollowsFocus,
+    // eslint-disable-next-line react/prop-types
+    textColor = 'inherit',
+    value,
+    wrapped = false
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
+
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
+    disabled,
+    disableFocusRipple,
+    selected,
+    icon: !!iconProp,
+    label: !!label,
+    fullWidth,
+    textColor,
+    wrapped
+  });
+
+  const classes = useUtilityClasses(ownerState);
+  const icon = iconProp && label && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.isValidElement(iconProp) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.cloneElement(iconProp, {
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.iconWrapper, iconProp.props.className)
+  }) : iconProp;
+
+  const handleClick = event => {
+    if (!selected && onChange) {
+      onChange(event, value);
+    }
+
+    if (onClick) {
+      onClick(event);
+    }
+  };
+
+  const handleFocus = event => {
+    if (selectionFollowsFocus && !selected && onChange) {
+      onChange(event, value);
+    }
+
+    if (onFocus) {
+      onFocus(event);
+    }
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(TabRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    focusRipple: !disableFocusRipple,
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
+    ref: ref,
+    role: "tab",
+    "aria-selected": selected,
+    disabled: disabled,
+    onClick: handleClick,
+    onFocus: handleFocus,
+    ownerState: ownerState,
+    tabIndex: selected ? 0 : -1
+  }, other, {
+    children: [icon, label, indicator]
+  }));
+});
+ true ? Tab.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * This prop isn't supported.
+   * Use the `component` prop if you need to change the children structure.
+   */
+  children: _utils_unsupportedProp__WEBPACK_IMPORTED_MODULE_12__["default"],
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+
+  /**
+   * If `true`, the component is disabled.
+   * @default false
+   */
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * If `true`, the  keyboard focus ripple is disabled.
+   * @default false
+   */
+  disableFocusRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * If `true`, the ripple effect is disabled.
+   *
+   * ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
+   * to highlight the element by applying separate styles with the `.Mui-focusVisible` class.
+   * @default false
+   */
+  disableRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+
+  /**
+   * The icon to display.
+   */
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_3___default().element), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)]),
+
+  /**
+   * The label element.
+   */
+  label: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * @ignore
+   */
+  onChange: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
+
+  /**
+   * @ignore
+   */
+  onClick: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
+
+  /**
+   * @ignore
+   */
+  onFocus: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+
+  /**
+   * You can provide your own value. Otherwise, we fallback to the child position index.
+   */
+  value: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().any),
+
+  /**
+   * Tab labels appear in a single row.
+   * They can use a second line if needed.
+   * @default false
+   */
+  wrapped: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool)
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tab);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Tab/tabClasses.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@mui/material/Tab/tabClasses.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getTabUtilityClass": () => (/* binding */ getTabUtilityClass),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClass/generateUtilityClass.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClasses/generateUtilityClasses.js");
+
+function getTabUtilityClass(slot) {
+  return (0,_mui_core__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiTab', slot);
+}
+const tabClasses = (0,_mui_core__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiTab', ['root', 'labelIcon', 'textColorInherit', 'textColorPrimary', 'textColorSecondary', 'selected', 'disabled', 'fullWidth', 'wrapped', 'iconWrapper']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Tabs/ScrollbarSize.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@mui/material/Tabs/ScrollbarSize.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ScrollbarSize)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_debounce__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/debounce */ "./node_modules/@mui/material/utils/debounce.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils */ "./node_modules/@mui/material/utils/ownerWindow.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+const _excluded = ["onChange"];
+
+
+
+
+
+const styles = {
+  width: 99,
+  height: 99,
+  position: 'absolute',
+  top: -9999,
+  overflow: 'scroll'
+};
+/**
+ * @ignore - internal component.
+ * The component originates from https://github.com/STORIS/react-scrollbar-size.
+ * It has been moved into the core in order to minimize the bundle size.
+ */
+
+function ScrollbarSize(props) {
+  const {
+    onChange
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded);
+
+  const scrollbarHeight = react__WEBPACK_IMPORTED_MODULE_2__.useRef();
+  const nodeRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
+
+  const setMeasurements = () => {
+    scrollbarHeight.current = nodeRef.current.offsetHeight - nodeRef.current.clientHeight;
+  };
+
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    const handleResize = (0,_utils_debounce__WEBPACK_IMPORTED_MODULE_5__["default"])(() => {
+      const prevHeight = scrollbarHeight.current;
+      setMeasurements();
+
+      if (prevHeight !== scrollbarHeight.current) {
+        onChange(scrollbarHeight.current);
+      }
+    });
+    const containerWindow = (0,_utils__WEBPACK_IMPORTED_MODULE_6__["default"])(nodeRef.current);
+    containerWindow.addEventListener('resize', handleResize);
+    return () => {
+      handleResize.clear();
+      containerWindow.removeEventListener('resize', handleResize);
+    };
+  }, [onChange]);
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    setMeasurements();
+    onChange(scrollbarHeight.current);
+  }, [onChange]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    style: styles,
+    ref: nodeRef
+  }, other));
+}
+ true ? ScrollbarSize.propTypes = {
+  onChange: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func.isRequired)
+} : 0;
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Tabs/Tabs.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@mui/material/Tabs/Tabs.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/@mui/material/node_modules/react-is/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/refType.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/composeClasses/composeClasses.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@mui/material/styles/useTheme.js");
+/* harmony import */ var _utils_debounce__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../utils/debounce */ "./node_modules/@mui/material/utils/debounce.js");
+/* harmony import */ var _utils_scrollLeft__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utils/scrollLeft */ "./node_modules/@mui/utils/esm/scrollLeft.js");
+/* harmony import */ var _internal_animate__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../internal/animate */ "./node_modules/@mui/material/internal/animate.js");
+/* harmony import */ var _ScrollbarSize__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ScrollbarSize */ "./node_modules/@mui/material/Tabs/ScrollbarSize.js");
+/* harmony import */ var _TabScrollButton__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../TabScrollButton */ "./node_modules/@mui/material/TabScrollButton/TabScrollButton.js");
+/* harmony import */ var _utils_useEventCallback__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../utils/useEventCallback */ "./node_modules/@mui/material/utils/useEventCallback.js");
+/* harmony import */ var _tabsClasses__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./tabsClasses */ "./node_modules/@mui/material/Tabs/tabsClasses.js");
+/* harmony import */ var _utils_ownerDocument__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../utils/ownerDocument */ "./node_modules/@mui/material/utils/ownerDocument.js");
+/* harmony import */ var _utils_ownerWindow__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../utils/ownerWindow */ "./node_modules/@mui/material/utils/ownerWindow.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+const _excluded = ["aria-label", "aria-labelledby", "action", "centered", "children", "className", "component", "allowScrollButtonsMobile", "indicatorColor", "onChange", "orientation", "ScrollButtonComponent", "scrollButtons", "selectionFollowsFocus", "TabIndicatorProps", "TabScrollButtonProps", "textColor", "value", "variant", "visibleScrollbar"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const nextItem = (list, item) => {
+  if (list === item) {
+    return list.firstChild;
+  }
+
+  if (item && item.nextElementSibling) {
+    return item.nextElementSibling;
+  }
+
+  return list.firstChild;
+};
+
+const previousItem = (list, item) => {
+  if (list === item) {
+    return list.lastChild;
+  }
+
+  if (item && item.previousElementSibling) {
+    return item.previousElementSibling;
+  }
+
+  return list.lastChild;
+};
+
+const moveFocus = (list, currentFocus, traversalFunction) => {
+  let wrappedOnce = false;
+  let nextFocus = traversalFunction(list, currentFocus);
+
+  while (nextFocus) {
+    // Prevent infinite loop.
+    if (nextFocus === list.firstChild) {
+      if (wrappedOnce) {
+        return;
+      }
+
+      wrappedOnce = true;
+    } // Same logic as useAutocomplete.js
+
+
+    const nextFocusDisabled = nextFocus.disabled || nextFocus.getAttribute('aria-disabled') === 'true';
+
+    if (!nextFocus.hasAttribute('tabindex') || nextFocusDisabled) {
+      // Move to the next element.
+      nextFocus = traversalFunction(list, nextFocus);
+    } else {
+      nextFocus.focus();
+      return;
+    }
+  }
+};
+
+const useUtilityClasses = ownerState => {
+  const {
+    vertical,
+    fixed,
+    hideScrollbar,
+    scrollableX,
+    scrollableY,
+    centered,
+    scrollButtonsHideMobile,
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root', vertical && 'vertical'],
+    scroller: ['scroller', fixed && 'fixed', hideScrollbar && 'hideScrollbar', scrollableX && 'scrollableX', scrollableY && 'scrollableY'],
+    flexContainer: ['flexContainer', vertical && 'flexContainerVertical', centered && 'centered'],
+    indicator: ['indicator'],
+    scrollButtons: ['scrollButtons', scrollButtonsHideMobile && 'scrollButtonsHideMobile'],
+    scrollableX: [scrollableX && 'scrollableX'],
+    hideScrollbar: [hideScrollbar && 'hideScrollbar']
+  };
+  return (0,_mui_core__WEBPACK_IMPORTED_MODULE_7__["default"])(slots, _tabsClasses__WEBPACK_IMPORTED_MODULE_8__.getTabsUtilityClass, classes);
+};
+
+const TabsRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])('div', {
+  name: 'MuiTabs',
+  slot: 'Root',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [{
+      [`& .${_tabsClasses__WEBPACK_IMPORTED_MODULE_8__["default"].scrollButtons}`]: styles.scrollButtons
+    }, {
+      [`& .${_tabsClasses__WEBPACK_IMPORTED_MODULE_8__["default"].scrollButtons}`]: ownerState.scrollButtonsHideMobile && styles.scrollButtonsHideMobile
+    }, styles.root, ownerState.vertical && styles.vertical];
+  }
+})(({
+  ownerState,
+  theme
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  overflow: 'hidden',
+  minHeight: 48,
+  // Add iOS momentum scrolling for iOS < 13.0
+  WebkitOverflowScrolling: 'touch',
+  display: 'flex'
+}, ownerState.vertical && {
+  flexDirection: 'column'
+}, ownerState.scrollButtonsHideMobile && {
+  [`& .${_tabsClasses__WEBPACK_IMPORTED_MODULE_8__["default"].scrollButtons}`]: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  }
+}));
+const TabsScroller = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])('div', {
+  name: 'MuiTabs',
+  slot: 'Scroller',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.scroller, ownerState.fixed && styles.fixed, ownerState.hideScrollbar && styles.hideScrollbar, ownerState.scrollableX && styles.scrollableX, ownerState.scrollableY && styles.scrollableY];
+  }
+})(({
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  position: 'relative',
+  display: 'inline-block',
+  flex: '1 1 auto',
+  whiteSpace: 'nowrap'
+}, ownerState.fixed && {
+  overflowX: 'hidden',
+  width: '100%'
+}, ownerState.hideScrollbar && {
+  // Hide dimensionless scrollbar on MacOS
+  scrollbarWidth: 'none',
+  // Firefox
+  '&::-webkit-scrollbar': {
+    display: 'none' // Safari + Chrome
+
+  }
+}, ownerState.scrollableX && {
+  overflowX: 'auto',
+  overflowY: 'hidden'
+}, ownerState.scrollableY && {
+  overflowY: 'auto',
+  overflowX: 'hidden'
+}));
+const FlexContainer = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])('div', {
+  name: 'MuiTabs',
+  slot: 'FlexContainer',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.flexContainer, ownerState.vertical && styles.flexContainerVertical, ownerState.centered && styles.centered];
+  }
+})(({
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  display: 'flex'
+}, ownerState.vertical && {
+  flexDirection: 'column'
+}, ownerState.centered && {
+  justifyContent: 'center'
+}));
+const TabsIndicator = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])('span', {
+  name: 'MuiTabs',
+  slot: 'Indicator',
+  overridesResolver: (props, styles) => styles.indicator
+})(({
+  ownerState,
+  theme
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  position: 'absolute',
+  height: 2,
+  bottom: 0,
+  width: '100%',
+  transition: theme.transitions.create()
+}, ownerState.indicatorColor === 'primary' && {
+  backgroundColor: theme.palette.primary.main
+}, ownerState.indicatorColor === 'secondary' && {
+  backgroundColor: theme.palette.secondary.main
+}, ownerState.vertical && {
+  height: '100%',
+  width: 2,
+  right: 0
+}));
+const TabsScrollbarSize = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_9__["default"])(_ScrollbarSize__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  name: 'MuiTabs',
+  slot: 'ScrollbarSize'
+})({
+  overflowX: 'auto',
+  overflowY: 'hidden',
+  // Hide dimensionless scrollbar on MacOS
+  scrollbarWidth: 'none',
+  // Firefox
+  '&::-webkit-scrollbar': {
+    display: 'none' // Safari + Chrome
+
+  }
+});
+const defaultIndicatorStyle = {};
+let warnedOnceTabPresent = false;
+const Tabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Tabs(inProps, ref) {
+  const props = (0,_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_11__["default"])({
+    props: inProps,
+    name: 'MuiTabs'
+  });
+  const theme = (0,_styles_useTheme__WEBPACK_IMPORTED_MODULE_12__["default"])();
+  const isRtl = theme.direction === 'rtl';
+
+  const {
+    'aria-label': ariaLabel,
+    'aria-labelledby': ariaLabelledBy,
+    action,
+    centered = false,
+    children: childrenProp,
+    className,
+    component = 'div',
+    allowScrollButtonsMobile = false,
+    indicatorColor = 'primary',
+    onChange,
+    orientation = 'horizontal',
+    ScrollButtonComponent = _TabScrollButton__WEBPACK_IMPORTED_MODULE_13__["default"],
+    scrollButtons = 'auto',
+    selectionFollowsFocus,
+    TabIndicatorProps = {},
+    TabScrollButtonProps = {},
+    textColor = 'primary',
+    value,
+    variant = 'standard',
+    visibleScrollbar = false
+  } = props,
+        other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
+
+  const scrollable = variant === 'scrollable';
+  const vertical = orientation === 'vertical';
+  const scrollStart = vertical ? 'scrollTop' : 'scrollLeft';
+  const start = vertical ? 'top' : 'left';
+  const end = vertical ? 'bottom' : 'right';
+  const clientSize = vertical ? 'clientHeight' : 'clientWidth';
+  const size = vertical ? 'height' : 'width';
+
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
+    component,
+    allowScrollButtonsMobile,
+    indicatorColor,
+    orientation,
+    vertical,
+    scrollButtons,
+    textColor,
+    variant,
+    visibleScrollbar,
+    fixed: !scrollable,
+    hideScrollbar: scrollable && !visibleScrollbar,
+    scrollableX: scrollable && !vertical,
+    scrollableY: scrollable && vertical,
+    centered: centered && !scrollable,
+    scrollButtonsHideMobile: !allowScrollButtonsMobile
+  });
+
+  const classes = useUtilityClasses(ownerState);
+
+  if (true) {
+    if (centered && scrollable) {
+      console.error('MUI: You can not use the `centered={true}` and `variant="scrollable"` properties ' + 'at the same time on a `Tabs` component.');
+    }
+  }
+
+  const [mounted, setMounted] = react__WEBPACK_IMPORTED_MODULE_2__.useState(false);
+  const [indicatorStyle, setIndicatorStyle] = react__WEBPACK_IMPORTED_MODULE_2__.useState(defaultIndicatorStyle);
+  const [displayScroll, setDisplayScroll] = react__WEBPACK_IMPORTED_MODULE_2__.useState({
+    start: false,
+    end: false
+  });
+  const [scrollerStyle, setScrollerStyle] = react__WEBPACK_IMPORTED_MODULE_2__.useState({
+    overflow: 'hidden',
+    scrollbarWidth: 0
+  });
+  const valueToIndex = new Map();
+  const tabsRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
+  const tabListRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
+
+  const getTabsMeta = () => {
+    const tabsNode = tabsRef.current;
+    let tabsMeta;
+
+    if (tabsNode) {
+      const rect = tabsNode.getBoundingClientRect(); // create a new object with ClientRect class props + scrollLeft
+
+      tabsMeta = {
+        clientWidth: tabsNode.clientWidth,
+        scrollLeft: tabsNode.scrollLeft,
+        scrollTop: tabsNode.scrollTop,
+        scrollLeftNormalized: (0,_utils_scrollLeft__WEBPACK_IMPORTED_MODULE_14__.getNormalizedScrollLeft)(tabsNode, theme.direction),
+        scrollWidth: tabsNode.scrollWidth,
+        top: rect.top,
+        bottom: rect.bottom,
+        left: rect.left,
+        right: rect.right
+      };
+    }
+
+    let tabMeta;
+
+    if (tabsNode && value !== false) {
+      const children = tabListRef.current.children;
+
+      if (children.length > 0) {
+        const tab = children[valueToIndex.get(value)];
+
+        if (true) {
+          if (!tab) {
+            console.error([`MUI: The \`value\` provided to the Tabs component is invalid.`, `None of the Tabs' children match with "${value}".`, valueToIndex.keys ? `You can provide one of the following values: ${Array.from(valueToIndex.keys()).join(', ')}.` : null].join('\n'));
+          }
+        }
+
+        tabMeta = tab ? tab.getBoundingClientRect() : null;
+
+        if (true) {
+          if ( true && !warnedOnceTabPresent && tabMeta && tabMeta.width === 0 && tabMeta.height === 0) {
+            tabsMeta = null;
+            console.error(['MUI: The `value` provided to the Tabs component is invalid.', `The Tab with this \`value\` ("${value}") is not part of the document layout.`, "Make sure the tab item is present in the document or that it's not `display: none`."].join('\n'));
+            warnedOnceTabPresent = true;
+          }
+        }
+      }
+    }
+
+    return {
+      tabsMeta,
+      tabMeta
+    };
+  };
+
+  const updateIndicatorState = (0,_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_15__["default"])(() => {
+    const {
+      tabsMeta,
+      tabMeta
+    } = getTabsMeta();
+    let startValue = 0;
+    let startIndicator;
+
+    if (vertical) {
+      startIndicator = 'top';
+
+      if (tabMeta && tabsMeta) {
+        startValue = tabMeta.top - tabsMeta.top + tabsMeta.scrollTop;
+      }
+    } else {
+      startIndicator = isRtl ? 'right' : 'left';
+
+      if (tabMeta && tabsMeta) {
+        const correction = isRtl ? tabsMeta.scrollLeftNormalized + tabsMeta.clientWidth - tabsMeta.scrollWidth : tabsMeta.scrollLeft;
+        startValue = (isRtl ? -1 : 1) * (tabMeta[startIndicator] - tabsMeta[startIndicator] + correction);
+      }
+    }
+
+    const newIndicatorStyle = {
+      [startIndicator]: startValue,
+      // May be wrong until the font is loaded.
+      [size]: tabMeta ? tabMeta[size] : 0
+    }; // IE11 support, replace with Number.isNaN
+    // eslint-disable-next-line no-restricted-globals
+
+    if (isNaN(indicatorStyle[startIndicator]) || isNaN(indicatorStyle[size])) {
+      setIndicatorStyle(newIndicatorStyle);
+    } else {
+      const dStart = Math.abs(indicatorStyle[startIndicator] - newIndicatorStyle[startIndicator]);
+      const dSize = Math.abs(indicatorStyle[size] - newIndicatorStyle[size]);
+
+      if (dStart >= 1 || dSize >= 1) {
+        setIndicatorStyle(newIndicatorStyle);
+      }
+    }
+  });
+
+  const scroll = (scrollValue, {
+    animation = true
+  } = {}) => {
+    if (animation) {
+      (0,_internal_animate__WEBPACK_IMPORTED_MODULE_16__["default"])(scrollStart, tabsRef.current, scrollValue, {
+        duration: theme.transitions.duration.standard
+      });
+    } else {
+      tabsRef.current[scrollStart] = scrollValue;
+    }
+  };
+
+  const moveTabsScroll = delta => {
+    let scrollValue = tabsRef.current[scrollStart];
+
+    if (vertical) {
+      scrollValue += delta;
+    } else {
+      scrollValue += delta * (isRtl ? -1 : 1); // Fix for Edge
+
+      scrollValue *= isRtl && (0,_utils_scrollLeft__WEBPACK_IMPORTED_MODULE_14__.detectScrollType)() === 'reverse' ? -1 : 1;
+    }
+
+    scroll(scrollValue);
+  };
+
+  const getScrollSize = () => {
+    const containerSize = tabsRef.current[clientSize];
+    let totalSize = 0;
+    const children = Array.from(tabListRef.current.children);
+
+    for (let i = 0; i < children.length; i += 1) {
+      const tab = children[i];
+
+      if (totalSize + tab[clientSize] > containerSize) {
+        break;
+      }
+
+      totalSize += tab[clientSize];
+    }
+
+    return totalSize;
+  };
+
+  const handleStartScrollClick = () => {
+    moveTabsScroll(-1 * getScrollSize());
+  };
+
+  const handleEndScrollClick = () => {
+    moveTabsScroll(getScrollSize());
+  }; // TODO Remove <ScrollbarSize /> as browser support for hidding the scrollbar
+  // with CSS improves.
+
+
+  const handleScrollbarSizeChange = react__WEBPACK_IMPORTED_MODULE_2__.useCallback(scrollbarWidth => {
+    setScrollerStyle({
+      overflow: null,
+      scrollbarWidth
+    });
+  }, []);
+
+  const getConditionalElements = () => {
+    const conditionalElements = {};
+    conditionalElements.scrollbarSizeListener = scrollable ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(TabsScrollbarSize, {
+      onChange: handleScrollbarSizeChange,
+      className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.scrollableX, classes.hideScrollbar)
+    }) : null;
+    const scrollButtonsActive = displayScroll.start || displayScroll.end;
+    const showScrollButtons = scrollable && (scrollButtons === 'auto' && scrollButtonsActive || scrollButtons === true);
+    conditionalElements.scrollButtonStart = showScrollButtons ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(ScrollButtonComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      orientation: orientation,
+      direction: isRtl ? 'right' : 'left',
+      onClick: handleStartScrollClick,
+      disabled: !displayScroll.start
+    }, TabScrollButtonProps, {
+      className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.scrollButtons, TabScrollButtonProps.className)
+    })) : null;
+    conditionalElements.scrollButtonEnd = showScrollButtons ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(ScrollButtonComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      orientation: orientation,
+      direction: isRtl ? 'left' : 'right',
+      onClick: handleEndScrollClick,
+      disabled: !displayScroll.end
+    }, TabScrollButtonProps, {
+      className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.scrollButtons, TabScrollButtonProps.className)
+    })) : null;
+    return conditionalElements;
+  };
+
+  const scrollSelectedIntoView = (0,_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_15__["default"])(animation => {
+    const {
+      tabsMeta,
+      tabMeta
+    } = getTabsMeta();
+
+    if (!tabMeta || !tabsMeta) {
+      return;
+    }
+
+    if (tabMeta[start] < tabsMeta[start]) {
+      // left side of button is out of view
+      const nextScrollStart = tabsMeta[scrollStart] + (tabMeta[start] - tabsMeta[start]);
+      scroll(nextScrollStart, {
+        animation
+      });
+    } else if (tabMeta[end] > tabsMeta[end]) {
+      // right side of button is out of view
+      const nextScrollStart = tabsMeta[scrollStart] + (tabMeta[end] - tabsMeta[end]);
+      scroll(nextScrollStart, {
+        animation
+      });
+    }
+  });
+  const updateScrollButtonState = (0,_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_15__["default"])(() => {
+    if (scrollable && scrollButtons !== false) {
+      const {
+        scrollTop,
+        scrollHeight,
+        clientHeight,
+        scrollWidth,
+        clientWidth
+      } = tabsRef.current;
+      let showStartScroll;
+      let showEndScroll;
+
+      if (vertical) {
+        showStartScroll = scrollTop > 1;
+        showEndScroll = scrollTop < scrollHeight - clientHeight - 1;
+      } else {
+        const scrollLeft = (0,_utils_scrollLeft__WEBPACK_IMPORTED_MODULE_14__.getNormalizedScrollLeft)(tabsRef.current, theme.direction); // use 1 for the potential rounding error with browser zooms.
+
+        showStartScroll = isRtl ? scrollLeft < scrollWidth - clientWidth - 1 : scrollLeft > 1;
+        showEndScroll = !isRtl ? scrollLeft < scrollWidth - clientWidth - 1 : scrollLeft > 1;
+      }
+
+      if (showStartScroll !== displayScroll.start || showEndScroll !== displayScroll.end) {
+        setDisplayScroll({
+          start: showStartScroll,
+          end: showEndScroll
+        });
+      }
+    }
+  });
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    const handleResize = (0,_utils_debounce__WEBPACK_IMPORTED_MODULE_17__["default"])(() => {
+      updateIndicatorState();
+      updateScrollButtonState();
+    });
+    const win = (0,_utils_ownerWindow__WEBPACK_IMPORTED_MODULE_18__["default"])(tabsRef.current);
+    win.addEventListener('resize', handleResize);
+    let resizeObserver;
+
+    if (typeof ResizeObserver !== 'undefined') {
+      resizeObserver = new ResizeObserver(handleResize);
+      Array.from(tabListRef.current.children).forEach(child => {
+        resizeObserver.observe(child);
+      });
+    }
+
+    return () => {
+      handleResize.clear();
+      win.removeEventListener('resize', handleResize);
+
+      if (resizeObserver) {
+        resizeObserver.disconnect();
+      }
+    };
+  }, [updateIndicatorState, updateScrollButtonState]);
+  const handleTabsScroll = react__WEBPACK_IMPORTED_MODULE_2__.useMemo(() => (0,_utils_debounce__WEBPACK_IMPORTED_MODULE_17__["default"])(() => {
+    updateScrollButtonState();
+  }), [updateScrollButtonState]);
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    return () => {
+      handleTabsScroll.clear();
+    };
+  }, [handleTabsScroll]);
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    setMounted(true);
+  }, []);
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    updateIndicatorState();
+    updateScrollButtonState();
+  });
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    // Don't animate on the first render.
+    scrollSelectedIntoView(defaultIndicatorStyle !== indicatorStyle);
+  }, [scrollSelectedIntoView, indicatorStyle]);
+  react__WEBPACK_IMPORTED_MODULE_2__.useImperativeHandle(action, () => ({
+    updateIndicator: updateIndicatorState,
+    updateScrollButtons: updateScrollButtonState
+  }), [updateIndicatorState, updateScrollButtonState]);
+
+  const indicator = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(TabsIndicator, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, TabIndicatorProps, {
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.indicator, TabIndicatorProps.className),
+    ownerState: ownerState,
+    style: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, indicatorStyle, TabIndicatorProps.style)
+  }));
+
+  let childIndex = 0;
+  const children = react__WEBPACK_IMPORTED_MODULE_2__.Children.map(childrenProp, child => {
+    if (! /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.isValidElement(child)) {
+      return null;
+    }
+
+    if (true) {
+      if ((0,react_is__WEBPACK_IMPORTED_MODULE_3__.isFragment)(child)) {
+        console.error(["MUI: The Tabs component doesn't accept a Fragment as a child.", 'Consider providing an array instead.'].join('\n'));
+      }
+    }
+
+    const childValue = child.props.value === undefined ? childIndex : child.props.value;
+    valueToIndex.set(childValue, childIndex);
+    const selected = childValue === value;
+    childIndex += 1;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.cloneElement(child, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      fullWidth: variant === 'fullWidth',
+      indicator: selected && !mounted && indicator,
+      selected,
+      selectionFollowsFocus,
+      onChange,
+      textColor,
+      value: childValue
+    }, childIndex === 1 && value === false && !child.props.tabIndex ? {
+      tabIndex: 0
+    } : {}));
+  });
+
+  const handleKeyDown = event => {
+    const list = tabListRef.current;
+    const currentFocus = (0,_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_19__["default"])(list).activeElement; // Keyboard navigation assumes that [role="tab"] are siblings
+    // though we might warn in the future about nested, interactive elements
+    // as a a11y violation
+
+    const role = currentFocus.getAttribute('role');
+
+    if (role !== 'tab') {
+      return;
+    }
+
+    let previousItemKey = orientation === 'horizontal' ? 'ArrowLeft' : 'ArrowUp';
+    let nextItemKey = orientation === 'horizontal' ? 'ArrowRight' : 'ArrowDown';
+
+    if (orientation === 'horizontal' && isRtl) {
+      // swap previousItemKey with nextItemKey
+      previousItemKey = 'ArrowRight';
+      nextItemKey = 'ArrowLeft';
+    }
+
+    switch (event.key) {
+      case previousItemKey:
+        event.preventDefault();
+        moveFocus(list, currentFocus, previousItem);
+        break;
+
+      case nextItemKey:
+        event.preventDefault();
+        moveFocus(list, currentFocus, nextItem);
+        break;
+
+      case 'Home':
+        event.preventDefault();
+        moveFocus(list, null, nextItem);
+        break;
+
+      case 'End':
+        event.preventDefault();
+        moveFocus(list, null, previousItem);
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const conditionalElements = getConditionalElements();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(TabsRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
+    ownerState: ownerState,
+    ref: ref,
+    as: component
+  }, other, {
+    children: [conditionalElements.scrollButtonStart, conditionalElements.scrollbarSizeListener, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(TabsScroller, {
+      className: classes.scroller,
+      ownerState: ownerState,
+      style: {
+        overflow: scrollerStyle.overflow,
+        [vertical ? `margin${isRtl ? 'Left' : 'Right'}` : 'marginBottom']: visibleScrollbar ? undefined : -scrollerStyle.scrollbarWidth
+      },
+      ref: tabsRef,
+      onScroll: handleTabsScroll,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(FlexContainer, {
+        "aria-label": ariaLabel,
+        "aria-labelledby": ariaLabelledBy,
+        "aria-orientation": orientation === 'vertical' ? 'vertical' : null,
+        className: classes.flexContainer,
+        ownerState: ownerState,
+        onKeyDown: handleKeyDown,
+        ref: tabListRef,
+        role: "tablist",
+        children: children
+      }), mounted && indicator]
+    }), conditionalElements.scrollButtonEnd]
+  }));
+});
+ true ? Tabs.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * Callback fired when the component mounts.
+   * This is useful when you want to trigger an action programmatically.
+   * It supports two actions: `updateIndicator()` and `updateScrollButtons()`
+   *
+   * @param {object} actions This object contains all possible actions
+   * that can be triggered programmatically.
+   */
+  action: _mui_utils__WEBPACK_IMPORTED_MODULE_20__["default"],
+
+  /**
+   * If `true`, the scroll buttons aren't forced hidden on mobile.
+   * By default the scroll buttons are hidden on mobile and takes precedence over `scrollButtons`.
+   * @default false
+   */
+  allowScrollButtonsMobile: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+
+  /**
+   * The label for the Tabs as a string.
+   */
+  'aria-label': (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string),
+
+  /**
+   * An id or list of ids separated by a space that label the Tabs.
+   */
+  'aria-labelledby': (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string),
+
+  /**
+   * If `true`, the tabs are centered.
+   * This prop is intended for large views.
+   * @default false
+   */
+  centered: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().elementType),
+
+  /**
+   * Determines the color of the indicator.
+   * @default 'primary'
+   */
+  indicatorColor: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['primary', 'secondary']),
+
+  /**
+   * Callback fired when the value changes.
+   *
+   * @param {React.SyntheticEvent} event The event source of the callback. **Warning**: This is a generic event not a change event.
+   * @param {any} value We default to the index of the child (number)
+   */
+  onChange: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
+
+  /**
+   * The component orientation (layout flow direction).
+   * @default 'horizontal'
+   */
+  orientation: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['horizontal', 'vertical']),
+
+  /**
+   * The component used to render the scroll buttons.
+   * @default TabScrollButton
+   */
+  ScrollButtonComponent: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().elementType),
+
+  /**
+   * Determine behavior of scroll buttons when tabs are set to scroll:
+   *
+   * - `auto` will only present them when not all the items are visible.
+   * - `true` will always present them.
+   * - `false` will never present them.
+   *
+   * By default the scroll buttons are hidden on mobile.
+   * This behavior can be disabled with `allowScrollButtonsMobile`.
+   * @default 'auto'
+   */
+  scrollButtons: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['auto', false, true]),
+
+  /**
+   * If `true` the selected tab changes on focus. Otherwise it only
+   * changes on activation.
+   */
+  selectionFollowsFocus: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+
+  /**
+   * Props applied to the tab indicator element.
+   * @default  {}
+   */
+  TabIndicatorProps: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+
+  /**
+   * Props applied to the [`TabScrollButton`](/api/tab-scroll-button/) element.
+   * @default {}
+   */
+  TabScrollButtonProps: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+
+  /**
+   * Determines the color of the `Tab`.
+   * @default 'primary'
+   */
+  textColor: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['inherit', 'primary', 'secondary']),
+
+  /**
+   * The value of the currently selected `Tab`.
+   * If you don't want any selected `Tab`, you can set this prop to `false`.
+   */
+  value: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().any),
+
+  /**
+   * Determines additional display behavior of the tabs:
+   *
+   *  - `scrollable` will invoke scrolling properties and allow for horizontally
+   *  scrolling (or swiping) of the tab bar.
+   *  -`fullWidth` will make the tabs grow to use all the available space,
+   *  which should be used for small views, like on mobile.
+   *  - `standard` will render the default state.
+   * @default 'standard'
+   */
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOf(['fullWidth', 'scrollable', 'standard']),
+
+  /**
+   * If `true`, the scrollbar is visible. It can be useful when displaying
+   * a long vertical list of tabs.
+   * @default false
+   */
+  visibleScrollbar: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool)
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tabs);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Tabs/tabsClasses.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@mui/material/Tabs/tabsClasses.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getTabsUtilityClass": () => (/* binding */ getTabsUtilityClass),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClass/generateUtilityClass.js");
+/* harmony import */ var _mui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/core */ "./node_modules/@mui/core/generateUtilityClasses/generateUtilityClasses.js");
+
+function getTabsUtilityClass(slot) {
+  return (0,_mui_core__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiTabs', slot);
+}
+const tabsClasses = (0,_mui_core__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiTabs', ['root', 'vertical', 'flexContainer', 'flexContainerVertical', 'centered', 'scroller', 'fixed', 'scrollableX', 'scrollableY', 'hideScrollbar', 'scrollButtons', 'scrollButtonsHideMobile', 'indicator']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabsClasses);
+
+/***/ }),
+
 /***/ "./node_modules/@mui/material/TextField/TextField.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@mui/material/TextField/TextField.js ***!
@@ -17969,6 +19472,69 @@ const red = {
 
 /***/ }),
 
+/***/ "./node_modules/@mui/material/internal/animate.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@mui/material/internal/animate.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ animate)
+/* harmony export */ });
+function easeInOutSin(time) {
+  return (1 + Math.sin(Math.PI * time - Math.PI / 2)) / 2;
+}
+
+function animate(property, element, to, options = {}, cb = () => {}) {
+  const {
+    ease = easeInOutSin,
+    duration = 300 // standard
+
+  } = options;
+  let start = null;
+  const from = element[property];
+  let cancelled = false;
+
+  const cancel = () => {
+    cancelled = true;
+  };
+
+  const step = timestamp => {
+    if (cancelled) {
+      cb(new Error('Animation cancelled'));
+      return;
+    }
+
+    if (start === null) {
+      start = timestamp;
+    }
+
+    const time = Math.min(1, (timestamp - start) / duration);
+    element[property] = ease(time) * (to - from) + from;
+
+    if (time >= 1) {
+      requestAnimationFrame(() => {
+        cb(null);
+      });
+      return;
+    }
+
+    requestAnimationFrame(step);
+  };
+
+  if (from === to) {
+    cb(new Error('Element already at target position'));
+    return cancel;
+  }
+
+  requestAnimationFrame(step);
+  return cancel;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@mui/material/internal/svg-icons/ArrowDropDown.js":
 /*!************************************************************************!*\
   !*** ./node_modules/@mui/material/internal/svg-icons/ArrowDropDown.js ***!
@@ -18076,6 +19642,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
   d: "M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"
 }), 'InfoOutlined'));
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/internal/svg-icons/KeyboardArrowLeft.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@mui/material/internal/svg-icons/KeyboardArrowLeft.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _utils_createSvgIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/createSvgIcon */ "./node_modules/@mui/material/utils/createSvgIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+/**
+ * @ignore - internal component.
+ */
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+  d: "M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+}), 'KeyboardArrowLeft'));
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/internal/svg-icons/KeyboardArrowRight.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@mui/material/internal/svg-icons/KeyboardArrowRight.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _utils_createSvgIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/createSvgIcon */ "./node_modules/@mui/material/utils/createSvgIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+/**
+ * @ignore - internal component.
+ */
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+  d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+}), 'KeyboardArrowRight'));
 
 /***/ }),
 
@@ -22911,6 +24531,97 @@ function requirePropFactory(componentNameInError, Component) {
   };
 
   return requireProp;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@mui/utils/esm/scrollLeft.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@mui/utils/esm/scrollLeft.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "detectScrollType": () => (/* binding */ detectScrollType),
+/* harmony export */   "getNormalizedScrollLeft": () => (/* binding */ getNormalizedScrollLeft)
+/* harmony export */ });
+// Source from https://github.com/alitaheri/normalize-scroll-left
+let cachedType;
+/**
+ * Based on the jquery plugin https://github.com/othree/jquery.rtl-scroll-type
+ *
+ * Types of scrollLeft, assuming scrollWidth=100 and direction is rtl.
+ *
+ * Type             | <- Most Left | Most Right -> | Initial
+ * ---------------- | ------------ | ------------- | -------
+ * default          | 0            | 100           | 100
+ * negative (spec*) | -100         | 0             | 0
+ * reverse          | 100          | 0             | 0
+ *
+ * Edge 85: default
+ * Safari 14: negative
+ * Chrome 85: negative
+ * Firefox 81: negative
+ * IE11: reverse
+ *
+ * spec* https://drafts.csswg.org/cssom-view/#dom-window-scroll
+ */
+
+function detectScrollType() {
+  if (cachedType) {
+    return cachedType;
+  }
+
+  const dummy = document.createElement('div');
+  const container = document.createElement('div');
+  container.style.width = '10px';
+  container.style.height = '1px';
+  dummy.appendChild(container);
+  dummy.dir = 'rtl';
+  dummy.style.fontSize = '14px';
+  dummy.style.width = '4px';
+  dummy.style.height = '1px';
+  dummy.style.position = 'absolute';
+  dummy.style.top = '-1000px';
+  dummy.style.overflow = 'scroll';
+  document.body.appendChild(dummy);
+  cachedType = 'reverse';
+
+  if (dummy.scrollLeft > 0) {
+    cachedType = 'default';
+  } else {
+    dummy.scrollLeft = 1;
+
+    if (dummy.scrollLeft === 0) {
+      cachedType = 'negative';
+    }
+  }
+
+  document.body.removeChild(dummy);
+  return cachedType;
+} // Based on https://stackoverflow.com/a/24394376
+
+function getNormalizedScrollLeft(element, direction) {
+  const scrollLeft = element.scrollLeft; // Perform the calculations only when direction is rtl to avoid messing up the ltr behavior
+
+  if (direction !== 'rtl') {
+    return scrollLeft;
+  }
+
+  const type = detectScrollType();
+
+  switch (type) {
+    case 'negative':
+      return element.scrollWidth - element.clientWidth + scrollLeft;
+
+    case 'reverse':
+      return element.scrollWidth - element.clientWidth - scrollLeft;
+
+    default:
+      return scrollLeft;
+  }
 }
 
 /***/ }),
@@ -66346,11 +68057,11 @@ function Main_1_1() {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null),
             "\u3000\u30C1\u30A7\u30C3\u30AF\u306E\u6709\u7121\u3092\u8AAD\u307F\u8FBC\u3080\u6A5F\u80FD\u306F\u3042\u308A\u307E\u305B\u3093\u3002"),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 2, mt: 1 }, variant: "body2" }, "\uFF08\uFF13\uFF09\u653B\u7565\u30E1\u30E2"),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 4, mt: 0 }, variant: "body2" }, "\u30FB\u4F5C\u308B\u4E88\u5B9A\uFF08\uFF12\u9031\u76EE\u904A\u3073\u306A\u304C\u3089...\uFF09"),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 4, mt: 0 }, variant: "body2" }, "\u30FB\uFF08\u4F5C\u6210\u4E2D\uFF09"),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 2, mt: 1 }, variant: "body2" }, "\uFF08\uFF14\uFF09\u30CE\u30FC\u30C8"),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 4, mt: 0 }, variant: "body2" }, "\u30FB\u4F5C\u308B\u4E88\u5B9A\uFF08\uFF12\u9031\u76EE\u904A\u3073\u306A\u304C\u3089...\uFF09"),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 4, mt: 0 }, variant: "body2" }, "\u30FB\uFF08\u4F5C\u6210\u4E2D\uFF09"),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 2, mt: 1 }, variant: "body2" }, "\uFF08\uFF15\uFF09\u88C5\u5099\u30E1\u30E2"),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 4, mt: 0 }, variant: "body2" }, "\u30FB\u4F5C\u308B\u4E88\u5B9A\uFF08\uFF12\u9031\u76EE\u904A\u3073\u306A\u304C\u3089...\uFF09"),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 4, mt: 0 }, variant: "body2" }, "\u30FB\u826F\u3055\u3052\u306A\u30A2\u30A4\u30C6\u30E0\u306E\u30E1\u30E2\uFF08\u4F5C\u6210\u4E2D\uFF09"),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_4__["default"], { textAlign: "right" }, "\u4EE5\u4E0A"),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 2, mt: 2, fontWeight: 'bold' }, variant: "subtitle1", component: "div" }, "\u63A8\u5968\u30D6\u30E9\u30A6\u30B6"),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { ml: 4, mt: 0 }, variant: "body2" },
@@ -66460,18 +68171,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/BottomNavigation */ "./node_modules/@mui/material/BottomNavigation/BottomNavigation.js");
-/* harmony import */ var _mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/BottomNavigationAction */ "./node_modules/@mui/material/BottomNavigationAction/BottomNavigationAction.js");
-/* harmony import */ var _mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/Restore */ "./node_modules/@mui/icons-material/Restore.js");
-/* harmony import */ var _mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material/DriveFileRenameOutlineSharp */ "./node_modules/@mui/icons-material/DriveFileRenameOutlineSharp.js");
-/* harmony import */ var _mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material/Star */ "./node_modules/@mui/icons-material/Star.js");
-/* harmony import */ var _mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/AnnouncementSharp */ "./node_modules/@mui/icons-material/AnnouncementSharp.js");
-/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
-/* harmony import */ var _mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/lab/TabContext */ "./node_modules/@mui/lab/TabContext/TabContext.js");
-/* harmony import */ var _mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/lab/TabPanel */ "./node_modules/@mui/lab/TabPanel/TabPanel.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/BottomNavigation */ "./node_modules/@mui/material/BottomNavigation/BottomNavigation.js");
+/* harmony import */ var _mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/BottomNavigationAction */ "./node_modules/@mui/material/BottomNavigationAction/BottomNavigationAction.js");
+/* harmony import */ var _mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/Restore */ "./node_modules/@mui/icons-material/Restore.js");
+/* harmony import */ var _mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material/DriveFileRenameOutlineSharp */ "./node_modules/@mui/icons-material/DriveFileRenameOutlineSharp.js");
+/* harmony import */ var _mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/icons-material/Star */ "./node_modules/@mui/icons-material/Star.js");
+/* harmony import */ var _mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material/AnnouncementSharp */ "./node_modules/@mui/icons-material/AnnouncementSharp.js");
+/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
+/* harmony import */ var _mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/lab/TabContext */ "./node_modules/@mui/lab/TabContext/TabContext.js");
+/* harmony import */ var _mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/lab/TabPanel */ "./node_modules/@mui/lab/TabPanel/TabPanel.js");
 /* harmony import */ var _Main_3_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Main_3_1 */ "./src/Main_3_1.tsx");
 /* harmony import */ var _Main_3_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main_3_2 */ "./src/Main_3_2.tsx");
+/* harmony import */ var _Main_3_4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Main_3_4 */ "./src/Main_3_4.tsx");
+
 
 
 
@@ -66486,11 +68199,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Main_3() {
-    const [valueTab, setValueTab] = react__WEBPACK_IMPORTED_MODULE_0__.useState('1');
-    const [valueBtm, setValueBtm] = react__WEBPACK_IMPORTED_MODULE_0__.useState(0);
+    const [valueTab, setValueTab] = react__WEBPACK_IMPORTED_MODULE_0__.useState('4');
+    const [valueBtm, setValueBtm] = react__WEBPACK_IMPORTED_MODULE_0__.useState(3);
     const ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: { height: "698px", maxHeight: "698px", minHeight: "698px", overflow: "auto" } },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { height: "698px", maxHeight: "698px", minHeight: "698px", overflow: "auto" } },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_5__["default"], { sx: {
                 display: "block",
                 position: "fixed",
                 left: 0,
@@ -66498,26 +68211,26 @@ function Main_3() {
                 width: "100%",
                 maxWidth: "384px"
             }, elevation: 0 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_5__["default"], { showLabels: true, value: valueBtm, onChange: (event, newValue) => {
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_6__["default"], { showLabels: true, value: valueBtm, onChange: (event, newValue) => {
                     setValueBtm(newValue);
                     newValue === 0 && setValueTab("1");
                     newValue === 1 && setValueTab("2");
                     newValue === 2 && setValueTab("3");
                     newValue === 3 && setValueTab("4");
                 } },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "\u5B9D\u306E\u5730\u56F3", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_7__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "\u653B\u7565\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_8__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "\u30CE\u30FC\u30C8", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_9__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_6__["default"], { label: "\u88C5\u5099\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_10__["default"], null) }))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_11__["default"], { value: valueTab },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "1" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u5B9D\u306E\u5730\u56F3", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_8__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u653B\u7565\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_9__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u30CE\u30FC\u30C8", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_10__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u88C5\u5099\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_11__["default"], null) }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_12__["default"], { value: valueTab },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "1" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_1__WEBPACK_IMPORTED_MODULE_1__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "2" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "2" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "3" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "3" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_12__["default"], { value: "4" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "4" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_4__WEBPACK_IMPORTED_MODULE_3__["default"], null)))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3);
 
@@ -66643,6 +68356,870 @@ function Main_3_2() {
 
 /***/ }),
 
+/***/ "./src/Main_3_4.tsx":
+/*!**************************!*\
+  !*** ./src/Main_3_4.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Tabs */ "./node_modules/@mui/material/Tabs/Tabs.js");
+/* harmony import */ var _mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/Tab */ "./node_modules/@mui/material/Tab/Tab.js");
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _Main_E_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Main_E_0 */ "./src/Main_E_0.tsx");
+/* harmony import */ var _Main_E_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main_E_2 */ "./src/Main_E_2.tsx");
+/* harmony import */ var _Main_E_13__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Main_E_13 */ "./src/Main_E_13.tsx");
+
+
+
+
+
+
+
+
+function TabPanel(props) {
+    const { children, value, index, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { role: "tabpanel", hidden: value !== index, id: `vertical-tabpanel-${index}`, "aria-labelledby": `vertical-tab-${index}`, ...other }, value === index && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { px: 1, py: 1 } },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], null, children)))));
+}
+function a11yProps(index) {
+    return {
+        id: `vertical-tab-${index}`,
+        'aria-controls': `vertical-tabpanel-${index}`,
+    };
+}
+function Main_3_2() {
+    const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0__.useState(0);
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { bgcolor: 'success.main', color: 'primary.contrastText', py: 0, px: 1, fontSize: "13px" } }, "\u88C5\u5099\u30E1\u30E2"),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: "100%" } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tabs__WEBPACK_IMPORTED_MODULE_6__["default"], { orientation: "vertical", variant: "scrollable", value: value, onChange: handleChange, "aria-label": "Vertical tabs example", sx: { m: 0, p: 0, borderRight: 1, borderColor: 'divider' } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u5263", ...a11yProps(0) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u91CD\u6B66\u5668", ...a11yProps(1) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u5200", ...a11yProps(2) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u9577\u67C4", ...a11yProps(3) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u7279\u6B8A", ...a11yProps(4) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u6756", ...a11yProps(5) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u5F13", ...a11yProps(6) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u76FE", ...a11yProps(7) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u91CD\u88C5", ...a11yProps(8) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u8EFD\u88C5", ...a11yProps(9) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u515C", ...a11yProps(10) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u5E3D\u5B50", ...a11yProps(11) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u30A4\u30F3\u30CA", ...a11yProps(12) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u30A2\u30AF\u30BB", ...a11yProps(13) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u795E\u5668", ...a11yProps(14) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Tab__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: { my: 0, py: 0, minHeight: "42px", minWidth: "80px" }, label: "\u5BB6\u5177", ...a11yProps(15) })),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 0 },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_0__WEBPACK_IMPORTED_MODULE_1__["default"], null)),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 1 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 2 },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 3 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 4 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 5 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 6 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 7 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 8 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 9 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 10 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 11 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 12 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 13 },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_13__WEBPACK_IMPORTED_MODULE_3__["default"], null)),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 14 }, "Item"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(TabPanel, { value: value, index: 15 }, "Item"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3_2);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_0.tsx":
+/*!**************************!*\
+  !*** ./src/Main_E_0.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _Main_E_xthbrand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Main_E_xthbrand */ "./src/Main_E_xthbrand.tsx");
+/* harmony import */ var _Main_E_demonslayer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main_E_demonslayer */ "./src/Main_E_demonslayer.tsx");
+
+
+
+
+function Main_E_0() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_xthbrand__WEBPACK_IMPORTED_MODULE_1__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_demonslayer__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_0);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_13.tsx":
+/*!***************************!*\
+  !*** ./src/Main_E_13.tsx ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _Main_E_tera_no_kagi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Main_E_tera_no_kagi */ "./src/Main_E_tera_no_kagi.tsx");
+/* harmony import */ var _Main_E_fran_no_kubikazari__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main_E_fran_no_kubikazari */ "./src/Main_E_fran_no_kubikazari.tsx");
+/* harmony import */ var _Main_E_promes_no_hairgom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Main_E_promes_no_hairgom */ "./src/Main_E_promes_no_hairgom.tsx");
+/* harmony import */ var _Main_E_crystal_fur__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Main_E_crystal_fur */ "./src/Main_E_crystal_fur.tsx");
+
+
+
+
+
+
+function Main_E_13() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_tera_no_kagi__WEBPACK_IMPORTED_MODULE_1__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_fran_no_kubikazari__WEBPACK_IMPORTED_MODULE_2__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_promes_no_hairgom__WEBPACK_IMPORTED_MODULE_3__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_crystal_fur__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_13);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_2.tsx":
+/*!**************************!*\
+  !*** ./src/Main_E_2.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _Main_E_ooMuramasa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Main_E_ooMuramasa */ "./src/Main_E_ooMuramasa.tsx");
+/* harmony import */ var _Main_E_muramasa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main_E_muramasa */ "./src/Main_E_muramasa.tsx");
+
+
+
+
+function Main_E_2() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_ooMuramasa__WEBPACK_IMPORTED_MODULE_1__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_E_muramasa__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_2);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_crystal_fur.tsx":
+/*!************************************!*\
+  !*** ./src/Main_E_crystal_fur.tsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_crystal_fur() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "20px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left" } }, "Rank A \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left" } }, "\u30AF\u30EA\u30B9\u30BF\u30EB\u30D5\u30A1\u30FC")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "8"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "6%")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }, "\u546A\u653B\uFF1F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }, "\u546A\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }, "\u7279\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }, "INT+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }, "LUC+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }, "\u5BFE\u7363\u4EBA"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }, "\u5BFE\u751F\u7269"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } }, "\u5BFE\u795E")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u5BFE\u5168\u7A2E\u5225")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u30B2\u3001\u30D5\u3001\u30D1\u3001\u30DE"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_crystal_fur);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_demonslayer.tsx":
+/*!************************************!*\
+  !*** ./src/Main_E_demonslayer.tsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_xthbrand() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "20px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left", fontWeight: 'bold' } }, "Rank A \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left", fontWeight: 'bold' } }, "\u8056\u5263\u30C7\u30E2\u30F3\u30B9\u30EC\u30A4\u30F3")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u7247\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "S"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "328"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "0"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "0"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "2"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "-")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }, "\u546A\u653B\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }, "\u546A\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }, "\u7279\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }, "HP\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }, "STR+3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }, "LUC+3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } })),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u30B2\u30A4\u30B6\u30FC\u5C02\u7528"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u5165\u624B\u65B9\u6CD5\uFF1A\u30E9\u30B9\u30DC\u30B9\u6226\u95D8\u524D\u30A4\u30D9\u30F3\u30C8"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\uFF08\u9B54\u5263\u30C7\u30E2\u30F3\u30B9\u30EC\u30A4\u30F3\u304C\u9032\u5316\uFF09"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_xthbrand);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_fran_no_kubikazari.tsx":
+/*!*******************************************!*\
+  !*** ./src/Main_E_fran_no_kubikazari.tsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_fran_no_kubikazari() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "20px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left" } }, "Rank S \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left" } }, "\u30D5\u30E9\u30F3\u306E\u9996\u98FE\u308A")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "4"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "2"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "8"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "6%")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }, "\u546A\u653B\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }, "\u546A\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }, "\u7279\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }, "HP\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }, "INT+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }, "MYS+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }, "LUC+3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }, "\u5BFE\u7363\u4EBA"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }, "\u5BFE\u751F\u7269"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } }, "\u5BFE\u795E")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u5BFE\u5168\u7A2E\u5225"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u9023\u308C\u53BB\u308A\u3092\u9632\u3050\uFF08\u5931\u308F\u308C\u306A\u3044\uFF09")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u5168\u30AF\u30E9\u30B9"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u5165\u624B\u65B9\u6CD5\uFF1A\u30AF\u30A8\u30B9\u30C8/\u76D7\u307E\u308C\u305F\u3007\u2715\u25B3\u3067\u96C6\u3081\u308B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500", color: 'error.main' } }, "\u203B\u30AF\u30A8\u30B9\u30C8/\u76D7\u307E\u308C\u305F\u3007\u2715\u25B3\u9054\u6210\u3067\u5931\u308F\u308C\u308B"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_fran_no_kubikazari);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_muramasa.tsx":
+/*!*********************************!*\
+  !*** ./src/Main_E_muramasa.tsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_muramasa() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "20px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left" } }, "Rank S \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left" } }, "\u6751\u6B63")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u7247\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "S"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "100"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "2"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "2"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "-")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }, "\u546A\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }, "\u7279\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }, "HP\uFF0D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }, "STR+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }, "VIT+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }, "AGI+5"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }, "LUC+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }, "\u5BFE\u7363\u4EBA"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }, "\u5BFE\u751F\u7269"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } }, "\u5BFE\u795E")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u5BFE\u5168\u7A2E\u5225\u3000\u81F4\u547D")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u30B5\u30E0\u30E9\u30A4\u5C02\u7528"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u5165\u624B\u65B9\u6CD5\uFF1A\u96A0\u3057\u30C7\u30E2\u30F3\u8A0E\u4F10\u5F8C"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_muramasa);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_ooMuramasa.tsx":
+/*!***********************************!*\
+  !*** ./src/Main_E_ooMuramasa.tsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_ooMuramasa() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "6px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left" } }, "Rank S \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left" } }, "\u5927\u6751\u6B63")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u4E21\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "M"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "160"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "3"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "2"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "4"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "-")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }, "\u546A\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }, "\u7279\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }, "HP\uFF0D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }, "STR+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }, "VIT+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }, "AGI+7"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }, "LUC+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }, "\u5BFE\u7363\u4EBA"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }, "\u5BFE\u751F\u7269"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } }, "\u5BFE\u795E")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u5BFE\u5168\u7A2E\u5225\u3000\u81F4\u547D")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u30B5\u30E0\u30E9\u30A4\u5C02\u7528"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u5165\u624B\u65B9\u6CD5\uFF1A\u96A0\u3057\u30C7\u30E2\u30F3\u8A0E\u4F10\u5F8C"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_ooMuramasa);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_promes_no_hairgom.tsx":
+/*!******************************************!*\
+  !*** ./src/Main_E_promes_no_hairgom.tsx ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_promes_no_hairgom() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "20px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left" } }, "Rank A \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left" } }, "\u30D7\u30ED\u30E1\u30B9\u306E\u30D8\u30A2\u30B4\u30E0")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "4"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "8"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "4%")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }, "\u546A\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }, "\u7279\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }, "HP\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }, "MYS+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }, "\u5BFE\u7363\u4EBA"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }, "\u5BFE\u751F\u7269"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } })),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u6226\u95D8\u4E0D\u80FD\u306E\u77AC\u9593\u306B\u8607\u751F")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u5168\u30AF\u30E9\u30B9"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u5165\u624B\u65B9\u6CD5\uFF1A\u30A8\u30EA\u30B9\u6483\u7834\uFF06\u30AD\u30CE\u30B3\u30AF\u30A8\u30AF\u30EA\u30A2\u5F8C"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\uFF08\u30E9\u30F3\u30B9\u30ED\u30FC\u30CA\u306E\u90E8\u5C4B\u3067\u5165\u624B\uFF09"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_promes_no_hairgom);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_tera_no_kagi.tsx":
+/*!*************************************!*\
+  !*** ./src/Main_E_tera_no_kagi.tsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_tera_no_kagi() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "6px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left" } }, "Rank S \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left" } }, "\u30C6\u30E9\u306E\u9375")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "2"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "4"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "9"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "7%")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }, "\u546A\u653B\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }, "STR+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }, "INT+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }, "MYS+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }, "VIT+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }, "AGI+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }, "LUC+1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }, "\u5BFE\u7363\u4EBA"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }, "\u5BFE\u751F\u7269"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } }, "\u5BFE\u795E")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u5BFE\u5168\u7A2E\u5225"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u9023\u308C\u53BB\u308A\u3092\u9632\u3050\uFF08\u5931\u308F\u308C\u306A\u3044\uFF09")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u30B2\u30A4\u30B6\u30FC\u5C02\u7528"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u5165\u624B\u65B9\u6CD5\uFF1A\u672C\u7DE8\u30AF\u30EA\u30A2\u5F8C\u306B\u7BA1\u7406\u4EBA\u5BA4\u3067\u5165\u624B"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_tera_no_kagi);
+
+
+/***/ }),
+
+/***/ "./src/Main_E_xthbrand.tsx":
+/*!*********************************!*\
+  !*** ./src/Main_E_xthbrand.tsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Divider */ "./node_modules/@mui/material/Divider/Divider.js");
+
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '0.88rem',
+            fontWeight: 'bold',
+            ...sx,
+        }, ...other }));
+}
+function Main_E_xthbrand() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 0,
+                mt: "6px", mb: "2px", pt: "3px", pb: "2px", px: "4px", border: '1px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 2', textAlign: "left" } }, "Rank S \u2605"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 5', textAlign: "left" } }, "\u30A8\u30AF\u30B9\u30D6\u30E9\u30F3\u30C9")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u6301\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "\u5C04\u7A0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "\u653B\u6483"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "\u56DE\u6570"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "\u547D\u4E2D"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "\u56DE\u907F"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "\u9632\u5FA1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "\u8EFD\u6E1B")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1' } }, "\u7247\u624B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2' } }, "S"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3' } }, "240"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4' } }, "2"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5' } }, "1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6' } }, "1"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '7' } }, "5"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '8' } }, "-")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '1', fontSize: "12px" } }, "\u546A\u653B\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '3', fontSize: "12px" } }, "\u546A\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '4', fontSize: "12px" } }, "\u7279\u9632\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '5', fontSize: "12px" } }, "HP\uFF0B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: '6', fontSize: "12px", color: "error.main" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '1', fontSize: "12px" } }, "STR+5"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '2', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '3', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '4', fontSize: "12px" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '5', fontSize: "12px" } }, "AGI+?"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: '6', fontSize: "12px" } }, "LUC+5"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '1', fontSize: "12px" } }, "\u5BFE\u7363\u4EBA"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '2', fontSize: "12px" } }, "\u5BFE\u751F\u7269"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '3', fontSize: "12px" } }, "\u5BFE\u4E0D\u6B7B"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '4', fontSize: "12px" } }, "\u5BFE\u7CBE\u970A"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '5', fontSize: "12px" } }, "\u5BFE\u9B54\u65CF"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: '6', fontSize: "12px" } }, "\u5BFE\u795E")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u5BFE\u5168\u7A2E\u5225"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 6', textAlign: "left", color: 'success.main', fontSize: "13px" } }, "\u30BD\u30EB\u30B2\u30A4\u30BA\u3092\u9632\u3050\uFF08\u5931\u308F\u308C\u306A\u3044\uFF09")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Divider__WEBPACK_IMPORTED_MODULE_2__["default"], { textAlign: "left", sx: { width: "270px", my: "2px" } }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 0, } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u88C5\u5099\u53EF\u80FD\uFF1A\u30B2\u30A4\u30B6\u30FC\u5C02\u7528"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\u5165\u624B\u65B9\u6CD5\uFF1A\u30AF\u30A8\u30B9\u30C8/\u76D7\u307E\u308C\u305F\u3007\u2715\u25B3\u3000\u306E\u9054\u6210"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "left", fontSize: "13px", fontWeight: "500" } }, "\uFF08\u8056\u5263\u30C7\u30E2\u30F3\u30B9\u30EC\u30A4\u30F3\u304C\u9032\u5316\uFF09"))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_E_xthbrand);
+
+
+/***/ }),
+
 /***/ "./src/selectOptionsDemon.tsx":
 /*!************************************!*\
   !*** ./src/selectOptionsDemon.tsx ***!
@@ -66755,15 +69332,15 @@ const treasureMap = [
     { id: 42, item: "茶の七", dg: "グリモダール城", er: "春の王宮", x: 4, y: 6, dm: "ユピテル" },
     { id: 43, item: "茶の八", dg: "無限坑道", er: "暗岩鉱区", x: 10, y: 17, dm: "プルト" },
     { id: 44, item: "茶の九", dg: "奴隷墓地", er: "古王の廟堂", x: 13, y: 8, dm: "エリス" },
-    { id: 45, item: "紫の一", dg: "グリモダール城-", er: "礼拝区画", x: 2, y: 17, dm: "コメット" },
+    { id: 45, item: "紫の一", dg: "グリモダール城", er: "礼拝区画", x: 2, y: 17, dm: "コメット" },
     { id: 46, item: "紫の二", dg: "黒い檻", er: "戒一マルス", x: 14, y: 7, dm: "マルス" },
-    { id: 47, item: "紫の三", dg: "グリモダール城-", er: "作戦区画", x: 12, y: 5, dm: "ヘルメス" },
-    { id: 48, item: "紫の四", dg: "グリモダール城-", er: "夏のエデン", x: 18, y: 4, dm: "ネプトゥヌス" },
+    { id: 47, item: "紫の三", dg: "グリモダール城", er: "作戦区画", x: 12, y: 5, dm: "ヘルメス" },
+    { id: 48, item: "紫の四", dg: "グリモダール城", er: "夏のエデン", x: 18, y: 4, dm: "ネプトゥヌス" },
     { id: 49, item: "紫の五", dg: "無限坑道", er: "坑道昇降区", x: 6, y: 13, dm: "アストロ" },
     { id: 50, item: "紫の六", dg: "奴隷墓地", er: "呪われた霊園", x: 4, y: 17, dm: "クロノス" },
     { id: 51, item: "紫の七", dg: "赤の旧市街", er: "水運商区", x: 4, y: 12, dm: "マルス" },
-    { id: 52, item: "紫の八", dg: "グリモダール城-", er: "礼拝区画", x: 9, y: 3, dm: "ウラヌス" },
-    { id: 53, item: "紫の九", dg: "グリモダール城-", er: "秋の王宮", x: 6, y: 7, dm: "エリス" },
+    { id: 52, item: "紫の八", dg: "グリモダール城", er: "礼拝区画", x: 9, y: 3, dm: "ウラヌス" },
+    { id: 53, item: "紫の九", dg: "グリモダール城", er: "秋の王宮", x: 6, y: 7, dm: "エリス" },
     { id: 54, item: "黒の一", dg: "星樹のとばり", er: "迷いの森", x: 18, y: 13, dm: "マルス" },
     { id: 55, item: "黒の二", dg: "グリモダール城", er: "兵営区画", x: 15, y: 0, dm: "クロノス" },
     { id: 56, item: "黒の三", dg: "青の旧市街", er: "沈没市街", x: 9, y: 8, dm: "ネプトゥヌス" },
