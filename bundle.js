@@ -67916,7 +67916,7 @@ __webpack_require__.r(__webpack_exports__);
 class Main extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     render() {
         return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { width: 384, height: 972, } },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { height: "218px", maxHeight: "218px", minHeight: "218px", overflow: "auto", } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { height: "170px", maxHeight: "170px", minHeight: "170px", overflow: "hidden", } },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_1__WEBPACK_IMPORTED_MODULE_1__["default"], null),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
@@ -68113,38 +68113,38 @@ __webpack_require__.r(__webpack_exports__);
 
 function Main_2() {
     const [toggle, setToggle] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
-    const [nanido, setNanido] = react__WEBPACK_IMPORTED_MODULE_0__.useState("あったかい");
+    const [nanido, setNanido] = react__WEBPACK_IMPORTED_MODULE_0__.useState("まるこげ");
     const [memoTgl1, setMemoTgl1] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
-    const [memoTxt1, setMemoTxt1] = react__WEBPACK_IMPORTED_MODULE_0__.useState("＜未設定＞");
+    const [memoTxt1, setMemoTxt1] = react__WEBPACK_IMPORTED_MODULE_0__.useState("ヘルメス Rank21 / エリス Rank21 / マルス Rank27");
     const [memoTgl2, setMemoTgl2] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
-    const [memoTxt2, setMemoTxt2] = react__WEBPACK_IMPORTED_MODULE_0__.useState("＜未設定＞");
+    const [memoTxt2, setMemoTxt2] = react__WEBPACK_IMPORTED_MODULE_0__.useState("持ち物：フェイクドール  x50　その他もろもろ");
     const [memoTgl3, setMemoTgl3] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
     const [memoTxt3, setMemoTxt3] = react__WEBPACK_IMPORTED_MODULE_0__.useState("＜未設定＞");
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { container: true, spacing: 1 },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 2, sm: 2 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "12px", paddingLeft: "12px", color: 'secondary.main', fontSize: "1.0em" } }, "\u96E3\u6613\u5EA6")),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "12px", paddingLeft: "12px", color: 'secondary.main', fontSize: "12px" } }, "\u96E3\u6613\u5EA6")),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 10, sm: 10 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "12px", paddingLeft: "12px", color: 'secondary.main', fontSize: "1.0em" } }, toggle
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "12px", paddingLeft: "12px", color: 'secondary.main', fontSize: "12px" } }, toggle
                 ? react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { style: { padding: 0, margin: 0 }, onDoubleClick: () => { setToggle(false); } }, nanido === "" ? "　　　　　" : nanido)
                 : react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", value: nanido, onChange: (event) => { setNanido(event.target.value); }, onKeyDown: (event) => { if (event.key === 'Enter' || event.key === 'Escape') {
                         setToggle(true);
-                    } }, onBlur: (event) => { setToggle(true); }, autoFocus: true, style: { padding: 0, margin: 0, width: "99%", fontSize: "0.8em" } }))),
+                    } }, onBlur: (event) => { setToggle(true); }, autoFocus: true, style: { padding: 0, margin: 0, width: "99%", fontSize: "10.5px" } }))),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 2, sm: 2 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "1.0em" } }, "\u30E1\u30E2\uFF11")),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "12px" } }, "\u30E1\u30E2\uFF11")),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 10, sm: 10 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "1.0em" } }, memoTgl1
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "12px" } }, memoTgl1
                 ? react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { style: { padding: 0, margin: 0 }, onDoubleClick: () => { setMemoTgl1(false); } }, memoTxt1 === "" ? "　　　　　" : memoTxt1)
                 : react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", value: memoTxt1, onChange: (event) => { setMemoTxt1(event.target.value); }, onKeyDown: (event) => { if (event.key === 'Enter' || event.key === 'Escape') {
                         setMemoTgl1(true);
-                    } }, onBlur: (event) => { setMemoTgl1(true); }, autoFocus: true, style: { padding: 0, margin: 0, width: "99%", fontSize: "0.8em" } }))),
+                    } }, onBlur: (event) => { setMemoTgl1(true); }, autoFocus: true, style: { padding: 0, margin: 0, width: "99%", fontSize: "10.5px" } }))),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 2, sm: 2 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "1.0em" } }, "\u30E1\u30E2\uFF12")),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "12px" } }, "\u30E1\u30E2\uFF12")),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 10, sm: 10 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "1.0em" } }, memoTgl2
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "12px" } }, memoTgl2
                 ? react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { style: { padding: 0, margin: 0 }, onDoubleClick: () => { setMemoTgl2(false); } }, memoTxt2 === "" ? "　　　　　" : memoTxt2)
                 : react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", value: memoTxt2, onChange: (event) => { setMemoTxt2(event.target.value); }, onKeyDown: (event) => { if (event.key === 'Enter' || event.key === 'Escape') {
                         setMemoTgl2(true);
-                    } }, onBlur: (event) => { setMemoTgl2(true); }, autoFocus: true, style: { padding: 0, margin: 0, width: "99%", fontSize: "0.8em" } }))),
+                    } }, onBlur: (event) => { setMemoTgl2(true); }, autoFocus: true, style: { padding: 0, margin: 0, width: "99%", fontSize: "10.5px" } }))),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 2, sm: 2 },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], { sx: { paddingTop: "0px", paddingLeft: "12px", color: 'success.main', fontSize: "1.0em" } }, "\u30E1\u30E2\uFF13")),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], { item: true, xs: 10, sm: 10 },
@@ -68171,19 +68171,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/BottomNavigation */ "./node_modules/@mui/material/BottomNavigation/BottomNavigation.js");
-/* harmony import */ var _mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/BottomNavigationAction */ "./node_modules/@mui/material/BottomNavigationAction/BottomNavigationAction.js");
-/* harmony import */ var _mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/Restore */ "./node_modules/@mui/icons-material/Restore.js");
-/* harmony import */ var _mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material/DriveFileRenameOutlineSharp */ "./node_modules/@mui/icons-material/DriveFileRenameOutlineSharp.js");
-/* harmony import */ var _mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/icons-material/Star */ "./node_modules/@mui/icons-material/Star.js");
-/* harmony import */ var _mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material/AnnouncementSharp */ "./node_modules/@mui/icons-material/AnnouncementSharp.js");
-/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
-/* harmony import */ var _mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/lab/TabContext */ "./node_modules/@mui/lab/TabContext/TabContext.js");
-/* harmony import */ var _mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/lab/TabPanel */ "./node_modules/@mui/lab/TabPanel/TabPanel.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/BottomNavigation */ "./node_modules/@mui/material/BottomNavigation/BottomNavigation.js");
+/* harmony import */ var _mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material/BottomNavigationAction */ "./node_modules/@mui/material/BottomNavigationAction/BottomNavigationAction.js");
+/* harmony import */ var _mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material/Restore */ "./node_modules/@mui/icons-material/Restore.js");
+/* harmony import */ var _mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/icons-material/DriveFileRenameOutlineSharp */ "./node_modules/@mui/icons-material/DriveFileRenameOutlineSharp.js");
+/* harmony import */ var _mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/icons-material/Star */ "./node_modules/@mui/icons-material/Star.js");
+/* harmony import */ var _mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material/AnnouncementSharp */ "./node_modules/@mui/icons-material/AnnouncementSharp.js");
+/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
+/* harmony import */ var _mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/lab/TabContext */ "./node_modules/@mui/lab/TabContext/TabContext.js");
+/* harmony import */ var _mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/lab/TabPanel */ "./node_modules/@mui/lab/TabPanel/TabPanel.js");
 /* harmony import */ var _Main_3_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Main_3_1 */ "./src/Main_3_1.tsx");
 /* harmony import */ var _Main_3_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main_3_2 */ "./src/Main_3_2.tsx");
-/* harmony import */ var _Main_3_4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Main_3_4 */ "./src/Main_3_4.tsx");
+/* harmony import */ var _Main_3_3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Main_3_3 */ "./src/Main_3_3.tsx");
+/* harmony import */ var _Main_3_4__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Main_3_4 */ "./src/Main_3_4.tsx");
+
 
 
 
@@ -68199,11 +68201,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Main_3() {
-    const [valueTab, setValueTab] = react__WEBPACK_IMPORTED_MODULE_0__.useState('4');
-    const [valueBtm, setValueBtm] = react__WEBPACK_IMPORTED_MODULE_0__.useState(3);
+    const [valueTab, setValueTab] = react__WEBPACK_IMPORTED_MODULE_0__.useState('3');
+    const [valueBtm, setValueBtm] = react__WEBPACK_IMPORTED_MODULE_0__.useState(2);
     const ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], { sx: { height: "698px", maxHeight: "698px", minHeight: "698px", overflow: "auto" } },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_5__["default"], { sx: {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"]
+    /* sx={{height: "698px", maxHeight: "698px", minHeight:"698px", overflow: "auto"}} */
+    , { 
+        /* sx={{height: "698px", maxHeight: "698px", minHeight:"698px", overflow: "auto"}} */
+        sx: { height: "744px", maxHeight: "744px", minHeight: "744px", overflow: "auto" } },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], { sx: {
                 display: "block",
                 position: "fixed",
                 left: 0,
@@ -68211,26 +68217,26 @@ function Main_3() {
                 width: "100%",
                 maxWidth: "384px"
             }, elevation: 0 },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_6__["default"], { showLabels: true, value: valueBtm, onChange: (event, newValue) => {
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigation__WEBPACK_IMPORTED_MODULE_7__["default"], { showLabels: true, value: valueBtm, onChange: (event, newValue) => {
                     setValueBtm(newValue);
                     newValue === 0 && setValueTab("1");
                     newValue === 1 && setValueTab("2");
                     newValue === 2 && setValueTab("3");
                     newValue === 3 && setValueTab("4");
                 } },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u5B9D\u306E\u5730\u56F3", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_8__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u653B\u7565\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_9__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u30CE\u30FC\u30C8", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_10__["default"], null) }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_7__["default"], { label: "\u88C5\u5099\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_11__["default"], null) }))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_12__["default"], { value: valueTab },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "1" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_8__["default"], { label: "\u5B9D\u306E\u5730\u56F3", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Restore__WEBPACK_IMPORTED_MODULE_9__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_8__["default"], { label: "\u653B\u7565\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_AnnouncementSharp__WEBPACK_IMPORTED_MODULE_10__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_8__["default"], { label: "\u30CE\u30FC\u30C8", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_DriveFileRenameOutlineSharp__WEBPACK_IMPORTED_MODULE_11__["default"], null) }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_8__["default"], { label: "\u88C5\u5099\u30E1\u30E2", icon: react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Star__WEBPACK_IMPORTED_MODULE_12__["default"], null) }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabContext__WEBPACK_IMPORTED_MODULE_13__["default"], { value: valueTab },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_14__["default"], { value: "1" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_1__WEBPACK_IMPORTED_MODULE_1__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "2" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_14__["default"], { value: "2" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "3" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_2__WEBPACK_IMPORTED_MODULE_2__["default"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_13__["default"], { value: "4" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_4__WEBPACK_IMPORTED_MODULE_3__["default"], null)))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_14__["default"], { value: "3" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_3__WEBPACK_IMPORTED_MODULE_3__["default"], null)),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_lab_TabPanel__WEBPACK_IMPORTED_MODULE_14__["default"], { value: "4" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Main_3_4__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3);
 
@@ -68352,6 +68358,226 @@ function Main_3_2() {
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3_2);
+
+
+/***/ }),
+
+/***/ "./src/Main_3_3.tsx":
+/*!**************************!*\
+  !*** ./src/Main_3_3.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: {
+            color: 'text.primary',
+            p: 0, borderRadius: 0,
+            textAlign: 'center',
+            fontSize: '11px',
+            fontWeight: '500',
+            lineHeight: '1.3em',
+            ...sx,
+        }, ...other }));
+}
+function Main_3_3() {
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "2px", mb: "0px", pt: "0px", pb: "0px", px: "0px", border: '0px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 14', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', bgcolor: '#ffff33', } }, "FRONT 1"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', bgcolor: '#ffff33', } }, "\u30D1\u30E9\u30C7\u30A3\u30F3"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30DD\u30A4\u30CB\u30FC\u30EA\u30A2\u30B9\uFF0B\uFF11\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30DD\u30A4\u30CB\u30FC\u30EB\u30C7\u30F3\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u982D"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30C9\u30E9\u30F3\u30D8\u30C3\u30C9\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u4F53"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30C9\u30E9\u30F3\u30B7\u30A7\u30FC\u30EB\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30CA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30C9\u30E9\u30F3\u30BF\u30A4\u30C4\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A2\u30AF\u30BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30E9\u30F3\u306E\u9996\u98FE\u308A"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30C6\u30EA\u30A2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30E9\u30F3\u306E\u6795"))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 10', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF11"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30B2\u30A4\u30B6\u30FC\u30D6\u30EC\u30A4\u30D6"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF12"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30A1\u30A4\u30CA\u30EB\u30AC\u30C3\u30C4"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF13"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u53CD\u6483"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF14"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30B7\u30E3\u30C9\u30FC\u30B9\u30C6\u30C3\u30D7"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF15"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30D1\u30EA\u30A3")))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "4px", mb: "0px", pt: "0px", pb: "0px", px: "0px", border: '0px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 14', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', bgcolor: '#ffff33', } }, "FRONT 2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', bgcolor: '#ffff33', } }, "\u30B5\u30E0\u30E9\u30A4"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u5C0F\u6751\u6B63\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u6751\u6B63\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u982D"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u5263\u8056\u306E\u9AEA\u7559\u3081"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u4F53"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u6751\u6B63\u88C5\u675F\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30CA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30E9\u30F3\u306E\u30D6\u30E9\u30B8\u30E3\u30FC"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A2\u30AF\u30BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u6751\u6B63\u306E\u5E2F\uFF0B\uFF11"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30C6\u30EA\u30A2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u53E4\u7ADC\u30AA\u30D6\u30EA\u30B9\u306E\u7D75"))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 10', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF11"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30E6\u30D4\u30C6\u30EB\u30D9\u30A4\u30F3"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF12"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30B2\u30A4\u30B6\u30FC\u30BB\u30F3\u30B9"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF13"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30C7\u30D0\u30A4\u30F3\u30DC\u30C7\u30A3"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF14"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u72E9\u4EBA\u306E\u76EE"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF15"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09")))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "4px", mb: "0px", pt: "0px", pb: "0px", px: "0px", border: '0px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 14', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', bgcolor: '#66ffff', } }, "BACK 1"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', bgcolor: '#66ffff', } }, "\u30DE\u30AD\u30CA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30F4\u30A1\u30EB\u30AD\u30EA\u30A2\u30B9\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u95C7\u5929\u4F7F\u306E\u5263\uFF0B\uFF13\uFF13"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u982D"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30E9\u30F3\u306E\u9AEA\u98FE\u308A"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u4F53"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30E9\u30F3\u306E\u30C9\u30EC\u30B9\uFF0B\uFF18"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30CA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u6700\u4E0A\u7D1A\u306E\u3055\u3089\u3057\u5E03"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A2\u30AF\u30BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u56DB\u3064\u8449\u306E\u9375\uFF0B\uFF11\uFF19"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30C6\u30EA\u30A2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u9ED2\u91D1\u306E\u4E0D\u6B7B\u732B"))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 10', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF11"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30A2\u30B9\u30C8\u30ED\u30D5\u30A9\u30FC\u30B9"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF12"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30B5\u30A4\u30AF\u30ED\u30F3"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF13"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u795E\u306E\u4E21\u8155"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF14"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30AD\u30E9\u30FC\u30A8\u30C3\u30B8"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF15"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30A9\u30FC\u30B9\u30BB\u30C3\u30C8\uFF28"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF16"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30A1\u30A4\u30CA\u30EB\u30BB\u30C3\u30C8"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF17"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u65AC\u308A\u8FBC\u307F\u3000\u5F10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF18"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u65AC\u308A\u8FBC\u307F\u3000\u53C2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF19"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u4FEE\u7F85\u3000\u88CF\u5F0F"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF11\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30AF\u30ED\u30B9\u30D5\u30A3\u30C3\u30AF\u30B9")))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "4px", mb: "0px", pt: "0px", pb: "0px", px: "0px", border: '0px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 14', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', bgcolor: '#66ffff', } }, "BACK 2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', bgcolor: '#66ffff', } }, "\u30B2\u30A4\u30B6\u30FC"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u8056\u5263\u30C7\u30E2\u30F3\u30B9\u30EC\u30A4\u30F3\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30EC\u30B8\u30A7\u30F3\u30C9\u30B9\u30D4\u30A2\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30EC\u30B8\u30A7\u30F3\u30C9\u30ED\u30C3\u30C9"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u982D"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30EC\u30B8\u30A7\u30F3\u30C9\u30D8\u30EB\u30E0\uFF0B\uFF17"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u4F53"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30EC\u30B8\u30A7\u30F3\u30C9\u30E1\u30A4\u30EB\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30CA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30EC\u30B8\u30A7\u30F3\u30C9\u30A2\u30F3\u30C0\u30FC"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A2\u30AF\u30BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30C6\u30E9\u306E\u9375\uFF0B\uFF11"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30C6\u30EA\u30A2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u7ADC\u738B\u30DA\u30A4\u30C7\u306E\u7D75"))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 10', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF11"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30DB\u30FC\u30EA\u30FC\u30AC\u30FC\u30C9"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF12"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u4E8C\u5200\u6D41"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF13"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30D7\u30ED\u30F4\u30A3\u30C7\u30F3\u30B9"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF14"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30DE\u30CA\u56DE\u5FA9\u2160"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF15"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30DE\u30CA\u56DE\u5FA9\u2161")))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "4px", mb: "0px", pt: "0px", pb: "0px", px: "0px", border: '0px solid #000', } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 14', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', bgcolor: '#66ffff', } }, "BACK 3"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', bgcolor: '#66ffff', } }, "\u30D2\u30FC\u30E9\u30FC"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30E9\u30F3\u306E\u7B92"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u7ADC\u76FE\u306E\u66F8\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u53F3\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u5DE6\u624BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u3000\uFF08\u3000\u88C5\u5099\u306A\u3057\u3000\uFF09\u3000"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u982D"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '6', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30A8\u30C7\u30F3\u306E\u30EA\u30DC\u30F3\uFF0B\uFF16"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u4F53"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '7', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30A8\u30C7\u30F3\u306E\u30C1\u30E5\u30CB\u30C3\u30AF\uFF0B\uFF13\uFF10"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30CA"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '8', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30A8\u30C7\u30F3\u306E\u808C\u7740\uFF0B\uFF11\uFF18"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A2\u30AF\u30BB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '9', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u30A8\u30C7\u30F3\u306E\u30B9\u30C8\u30FC\u30EB"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 9', textAlign: "center", border: '0px solid #000', } }, "\u30A4\u30F3\u30C6\u30EA\u30A2"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '10', gridColumn: 'span 15', textAlign: "left", border: '0px solid #000', } }, "\u71C3\u3048\u308B\u4E0D\u6B7B\u9CE5\u50CF"))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 10', textAlign: "left", border: '0px solid #000', } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], { sx: { display: 'grid', gridTemplateColumns: 'repeat(24, 1fr)', gap: 0, mt: "0px", mb: "0px", pt: "2px", pb: "0px", px: "2px", border: '0px solid #000', } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF11"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '1', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30DE\u30B8\u30C3\u30AF\u30A8\u30F3\u30CF\u30F3\u30B9"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF12"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '2', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30A1\u30B9\u30C8\u30AD\u30E3\u30B9\u30C8"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF13"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '3', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30D5\u30A9\u30FC\u30B9\u30BB\u30C3\u30C8\uFF37"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF14"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '4', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30AA\u30E1\u30AC\u30BB\u30C3\u30C8"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 8', textAlign: "center", border: '0px solid #000', } }, "\u795E\u5668\uFF15"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, { sx: { gridRow: '5', gridColumn: 'span 16', textAlign: "left", border: '0px solid #000', } }, "\u30B2\u30A4\u30B6\u30FC\u30CF\u30FC\u30C8"))))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main_3_3);
 
 
 /***/ }),
